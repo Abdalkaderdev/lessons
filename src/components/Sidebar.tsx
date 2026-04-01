@@ -28,7 +28,8 @@ export default function Sidebar({ student, modules }: SidebarProps) {
 
         <div className="flex items-center gap-3 mt-4">
           <div
-            className={`w-10 h-10 rounded-xl bg-gradient-to-br ${student.gradient} flex items-center justify-center`}
+            className="w-10 h-10 rounded-xl flex items-center justify-center"
+            style={{ background: student.gradient }}
           >
             <StudentIcon icon={student.icon} size={20} color="white" />
           </div>

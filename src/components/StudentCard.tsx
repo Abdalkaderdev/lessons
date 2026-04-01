@@ -7,7 +7,8 @@ export default function StudentCard({ student }: { student: Student }) {
     <Link href={`/${student.id}`} className="student-card block group">
       {/* Top gradient bar */}
       <div
-        className={`absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r ${student.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+        className="absolute top-0 left-0 right-0 h-[3px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        style={{ background: student.gradient }}
       />
 
       {/* Background glow */}
@@ -19,7 +20,8 @@ export default function StudentCard({ student }: { student: Student }) {
       {/* Icon + Tagline */}
       <div className="flex items-center gap-3 mb-6">
         <div
-          className={`w-10 h-10 rounded-xl bg-gradient-to-br ${student.gradient} flex items-center justify-center`}
+          className="w-10 h-10 rounded-xl flex items-center justify-center"
+          style={{ background: student.gradient }}
         >
           <StudentIcon icon={student.icon} size={20} color="white" />
         </div>

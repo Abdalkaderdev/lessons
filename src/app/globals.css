@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
 :root {
-  --bg-deep: #0c0e13;
-  --bg-surface: #14171f;
-  --bg-elevated: #1c2029;
-  --bg-hover: #252a35;
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-medium: rgba(255, 255, 255, 0.1);
-  --text-primary: #f0ece4;
-  --text-secondary: #9ca3af;
-  --text-muted: #6b7280;
-  --accent-warm: #e8c17a;
+  --bg-deep: #FAF7F2;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #F3EFE8;
+  --bg-hover: #EDEAE3;
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --border-medium: rgba(0, 0, 0, 0.11);
+  --text-primary: #2D2A24;
+  --text-secondary: #6B6560;
+  --text-muted: #A39E96;
+  --accent-warm: #B8622D;
   --font-display: 'Instrument Serif', Georgia, serif;
-  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
 body {
@@ -23,17 +23,30 @@ body {
   color: var(--text-primary);
 }
 
-/* Grain texture overlay */
+/* Paper grain texture */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0.025;
+  opacity: 0.018;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 200px;
+}
+
+/* Warm accent strip at top */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #B8622D 0%, #D4956B 50%, #B8622D 100%);
+  z-index: 10000;
+  pointer-events: none;
 }
 
 /* ===== Home Page ===== */
@@ -55,7 +68,7 @@ body::before {
   transform: translateX(-50%);
   width: 900px;
   height: 900px;
-  background: radial-gradient(circle, rgba(232, 193, 122, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(184, 98, 45, 0.05) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -70,6 +83,7 @@ body::before {
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03), 0 6px 16px rgba(0, 0, 0, 0.02);
 }
 
 .student-card::before {
@@ -84,11 +98,11 @@ body::before {
 }
 
 .student-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   border-color: var(--border-medium);
   box-shadow:
-    0 20px 60px -15px rgba(0, 0, 0, 0.5),
-    0 0 0 1px var(--border-medium);
+    0 16px 48px -12px rgba(0, 0, 0, 0.1),
+    0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .student-card:hover::before {
@@ -97,10 +111,10 @@ body::before {
 
 .student-card .card-glow {
   position: absolute;
-  top: -100px;
-  right: -100px;
-  width: 250px;
-  height: 250px;
+  top: -80px;
+  right: -80px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -179,7 +193,7 @@ body::before {
 }
 
 .sidebar-link.active {
-  background: var(--bg-hover);
+  background: var(--bg-elevated);
 }
 
 .sidebar-link.active::before {
@@ -221,19 +235,19 @@ body::before {
 }
 
 .viewer-btn-active {
-  background: rgba(232, 193, 122, 0.15);
+  background: rgba(184, 98, 45, 0.1);
   color: var(--accent-warm);
-  border-color: rgba(232, 193, 122, 0.3);
+  border-color: rgba(184, 98, 45, 0.2);
 }
 
 .viewer-btn-accent {
-  background: rgba(232, 193, 122, 0.12);
+  background: rgba(184, 98, 45, 0.08);
   color: var(--accent-warm);
-  border-color: rgba(232, 193, 122, 0.2);
+  border-color: rgba(184, 98, 45, 0.15);
 }
 
 .viewer-btn-accent:hover {
-  background: rgba(232, 193, 122, 0.2);
+  background: rgba(184, 98, 45, 0.14);
 }
 
 /* ===== Slide Controls ===== */
@@ -290,7 +304,7 @@ body::before {
 .lesson-body a {
   color: var(--accent-warm);
   text-decoration: none;
-  border-bottom: 1px solid rgba(232, 193, 122, 0.3);
+  border-bottom: 1px solid rgba(184, 98, 45, 0.3);
   transition: border-color 0.2s;
 }
 
@@ -308,7 +322,7 @@ body::before {
 }
 
 .lesson-body pre {
-  background: var(--bg-deep) !important;
+  background: #F8F5F0 !important;
   border: 1px solid var(--border-subtle);
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
@@ -328,7 +342,7 @@ body::before {
   border-left: 2px solid var(--accent-warm);
   padding: 0.75rem 1.25rem;
   margin: 1.5rem 0;
-  background: rgba(232, 193, 122, 0.04);
+  background: rgba(184, 98, 45, 0.04);
   border-radius: 0 10px 10px 0;
 }
 
@@ -384,10 +398,10 @@ body::before {
   body {
     background: white !important;
     color: black !important;
-    font-family: 'DM Sans', system-ui, sans-serif !important;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
   }
 
-  body::before { display: none !important; }
+  body::before, body::after { display: none !important; }
   .no-print { display: none !important; }
   .print-only { display: block !important; }
 
