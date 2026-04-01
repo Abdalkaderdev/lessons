@@ -1,9 +1,13 @@
 import { students } from "@/lib/students";
 import StudentCard from "@/components/StudentCard";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function HomePage() {
   return (
     <div className="home-hero">
+      <div className="fixed top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
       <div className="max-w-6xl mx-auto px-8 w-full">
         {/* Header */}
         <div className="mb-20 animate-entrance delay-1">

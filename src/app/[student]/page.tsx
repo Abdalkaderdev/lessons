@@ -3,6 +3,7 @@ import { getStudent } from "@/lib/students";
 import { getCurriculum, getModulesForStudent, getLessonsForModule } from "@/lib/content";
 import { marked } from "marked";
 import Link from "next/link";
+import ProgressDashboard from "@/components/ProgressDashboard";
 
 export default async function StudentDashboard({
   params,
@@ -17,10 +18,12 @@ export default async function StudentDashboard({
   const curriculumHtml = curriculumMd ? marked(curriculumMd) : null;
 
   const moduleSlugs = getModulesForStudent(studentId);
+  const modules = moduleSlugs.map((slug) => ({
+    slug,
+    lessons: getLessonsForModule(studentId, slug),
+  }));
   const firstLesson =
-    moduleSlugs.length > 0
-      ? getLessonsForModule(studentId, moduleSlugs[0])?.[0]
-      : null;
+    modules.length > 0 ? modules[0].lessons[0] : null;
 
   return (
     <div className="max-w-3xl">
@@ -54,11 +57,25 @@ export default async function StudentDashboard({
         </Link>
       )}
 
+      <ProgressDashboard
+        modules={modules}
+        studentName={student.name}
+        accentColor={student.accentColor}
+      />
+
       {curriculumHtml && (
-        <div
-          className="lesson-body"
-          dangerouslySetInnerHTML={{ __html: curriculumHtml }}
-        />
+        <div className="mt-10">
+          <h2
+            className="text-2xl mb-6"
+            style={{ fontFamily: 'var(--font-display)', color: 'var(--text-primary)' }}
+          >
+            Full Curriculum
+          </h2>
+          <div
+            className="lesson-body"
+            dangerouslySetInnerHTML={{ __html: curriculumHtml }}
+          />
+        </div>
       )}
     </div>
   );

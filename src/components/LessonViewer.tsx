@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { marked } from "marked";
 import { splitIntoSlides } from "@/lib/slides";
 import SlideControls from "./SlideControls";
+import CopyableContent from "./CopyableContent";
 
 interface LessonViewerProps {
   content: string;
@@ -127,9 +128,9 @@ export default function LessonViewer({ content, title, studentName, accentColor 
           </p>
         </div>
 
-        <div
+        <CopyableContent
+          html={currentHtml as string}
           className="lesson-body max-w-3xl"
-          dangerouslySetInnerHTML={{ __html: currentHtml as string }}
         />
 
         {/* Mark as complete */}

@@ -13,8 +13,23 @@
   --text-secondary: #6B6560;
   --text-muted: #A39E96;
   --accent-warm: #B8622D;
+  --pre-bg: #F8F5F0;
   --font-display: 'Instrument Serif', Georgia, serif;
   --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+[data-theme="dark"] {
+  --bg-deep: #0c0e13;
+  --bg-surface: #14171f;
+  --bg-elevated: #1c2029;
+  --bg-hover: #252a35;
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-medium: rgba(255, 255, 255, 0.1);
+  --text-primary: #f0ece4;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --accent-warm: #D4956B;
+  --pre-bg: #0c0e13;
 }
 
 body {
@@ -322,7 +337,7 @@ body::after {
 }
 
 .lesson-body pre {
-  background: #F8F5F0 !important;
+  background: var(--pre-bg) !important;
   border: 1px solid var(--border-subtle);
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
