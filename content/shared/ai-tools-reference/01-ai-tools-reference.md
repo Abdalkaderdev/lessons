@@ -1,6 +1,14 @@
+---
+title: "AI Tools Reference Guide"
+module: "AI Tools Reference"
+order: 1
+---
+
 # AI Tools Reference Guide
 
 > This is the master list of AI tools used across all lessons. Bookmark this page!
+
+---
 
 ## AI Chatbots — Your Main Tools
 | Tool | URL | Free Tier | Best For |
@@ -11,6 +19,8 @@
 | Perplexity | perplexity.ai | Yes (FREE Pro for students) | Research with real sources and citations |
 | Microsoft Copilot | copilot.microsoft.com | Yes | Office integration, web search built in |
 
+---
+
 ## AI Website Builders (No Coding!)
 | Tool | URL | Free Tier | Best For |
 |------|-----|-----------|----------|
@@ -19,6 +29,8 @@
 | Bolt.new | bolt.new | 1M tokens/month | Quick prototypes, most flexible |
 | Wix AI | wix.com | Free plan | Business websites, drag-and-drop |
 | Framer | framer.com | Free plan | Marketing pages, beautiful design |
+
+---
 
 ## AI Image Generation
 | Tool | URL | Free Tier | Best For |
@@ -32,6 +44,8 @@
 | Canva AI | canva.com | Free (Pro free for students!) | Templates + AI image generation |
 | Recraft | recraft.ai | Free tier | Vector graphics, icons, illustrations |
 
+---
+
 ## AI Writing & Grammar
 | Tool | URL | Free Tier | Best For |
 |------|-----|-----------|----------|
@@ -42,6 +56,8 @@
 | Copy.ai | copy.ai | Free tier | Marketing copy, social media captions |
 | Hemingway Editor | hemingwayapp.com | Free | Make writing clear and bold |
 
+---
+
 ## AI for Presentations
 | Tool | URL | Free Tier | Best For |
 |------|-----|-----------|----------|
@@ -50,6 +66,8 @@
 | Beautiful.ai | beautiful.ai | Free trial | Professional business decks |
 | Microsoft Copilot | PowerPoint integration | M365 subscription | Edit existing decks with AI |
 | SlidesAI | slidesai.io | Free tier | Google Slides integration |
+
+---
 
 ## AI for Spreadsheets & Data
 | Tool | URL | Free Tier | Best For |
@@ -62,6 +80,8 @@
 | Julius AI | julius.ai | Free tier | Upload data, get instant analysis |
 | Microsoft Copilot | Excel integration | M365 | Formulas, pivot tables, charts |
 
+---
+
 ## AI for Study & Learning
 | Tool | URL | Free Tier | Best For |
 |------|-----|-----------|----------|
@@ -72,6 +92,8 @@
 | Tutor AI | tutorai.me | Free | Learn any topic with AI-generated courses |
 | ChatPDF | chatpdf.com | Free tier | Upload PDF, ask questions about it |
 
+---
+
 ## AI for Video & Audio
 | Tool | URL | Free Tier | Best For |
 |------|-----|-----------|----------|
@@ -81,6 +103,8 @@
 | ElevenLabs | elevenlabs.io | Free tier | Text to speech, voice cloning |
 | CapCut | capcut.com | Free | Video editing with AI features |
 
+---
+
 ## AI for Design & Creativity
 | Tool | URL | Free Tier | Best For |
 |------|-----|-----------|----------|
@@ -89,6 +113,8 @@
 | Remove.bg | remove.bg | Free | Remove image backgrounds instantly |
 | Clipdrop | clipdrop.co | Free tier | Image editing, cleanup, enhance |
 | Looka | looka.com | Free to design | AI logo maker |
+
+---
 
 ## AI for Business & Productivity
 | Tool | URL | Free Tier | Best For |
@@ -101,6 +127,8 @@
 | Otter.ai | otter.ai | Free tier | Meeting notes, transcription |
 | Fireflies.ai | fireflies.ai | Free tier | Record + transcribe + summarize meetings |
 
+---
+
 ## AI for E-commerce & Online Business
 | Tool | URL | Free Tier | Best For |
 |------|-----|-----------|----------|
@@ -108,6 +136,8 @@
 | Canva | canva.com | FREE Pro for students | Product photos, social ads |
 | Copy.ai | copy.ai | Free tier | Product copy, email campaigns |
 | Midjourney/DALL-E | See above | See above | Product mockups, brand imagery |
+
+---
 
 ## Student Deals — Save $300-500/year!
 - **Google Gemini AI Pro** — FREE for 1 year with student email
@@ -118,6 +148,8 @@
 - **Figma Education** — FREE for students
 - **JetBrains** — FREE for students (all IDEs)
 
+---
+
 ## How to Pick the Right Tool
 
 1. **Start with the free chatbots** — Claude, ChatGPT, and Gemini can do 80% of everything
@@ -125,3 +157,9 @@
 3. **Claim student deals first** — get the pro versions free before paying for anything
 4. **Try before you commit** — most tools have free tiers, test them all
 5. **AI changes fast** — what's best today might not be best in 6 months, stay curious
+
+## Homework
+
+1. **Claim Your Free Student Tools** — Sign up for at least 3 student deals from the list above using your school email. Screenshot each confirmation and save them in a folder called "My AI Toolkit."
+2. **Tool Comparison Challenge** — Pick one task (e.g., "write a cover letter" or "make a logo") and try it in 3 different AI tools. Write a short paragraph about which one you liked best and why.
+3. **Build Your Personal Toolkit** — Create a simple list or spreadsheet of the 5-10 tools you plan to use regularly, what you'll use each one for, and whether you have a free or paid account.
