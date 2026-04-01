@@ -1,20 +1,12 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import type { LessonMeta, Lesson } from "./types";
+
+export type { LessonMeta, Lesson };
+export { formatModuleName } from "./types";
 
 const contentDir = path.join(process.cwd(), "content");
-
-export interface LessonMeta {
-  title: string;
-  module: string;
-  order: number;
-  slug: string;
-  moduleSlug: string;
-}
-
-export interface Lesson extends LessonMeta {
-  content: string;
-}
 
 export function getModulesForStudent(studentId: string): string[] {
   const studentDir = path.join(contentDir, studentId);
@@ -67,11 +59,4 @@ export function getCurriculum(studentId: string): string | null {
   const raw = fs.readFileSync(filePath, "utf-8");
   const { content } = matter(raw);
   return content;
-}
-
-export function formatModuleName(slug: string): string {
-  return slug
-    .replace(/^ai-for-/, "AI for ")
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
 }

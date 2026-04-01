@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Student } from "@/lib/students";
-import { LessonMeta, formatModuleName } from "@/lib/content";
+import { LessonMeta, formatModuleName } from "@/lib/types";
 
 interface SidebarProps {
   student: Student;
