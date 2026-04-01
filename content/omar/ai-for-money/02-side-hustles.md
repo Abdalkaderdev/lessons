@@ -273,3 +273,11 @@ Combined with your earlier modules (Websites, School, Social Media, Images),
 you have a complete AI toolkit for your life right now and for the future.
 
 Keep building. Keep shipping. Keep earning.
+
+## Homework
+
+1. **Build and Deploy One Spec Website** — Pick one of the fictional business briefs Claude generated for you (or ask for a new one). Build the full site using v0.dev, deploy it on Vercel, and add it to your portfolio page. Time yourself — the goal is to complete it in under 3 hours. This is proof you can deliver for a real client.
+
+2. **Send 5 Real Outreach Messages** — Find 5 local businesses near you that either have no website or have an obviously outdated one. Use Claude to write a personalised outreach message for each one (not a generic copy-paste). Send them via Instagram DM, email, or walk in and introduce yourself. Track who you contacted and any replies in a Google Sheet. Prompt to use: "I want to message [business name], a [type of business] in [your area]. They [have no website / have an outdated website]. Write me a short, personalised outreach message offering to build them a modern website for £150. Mention something specific about their business to show I've done my research."
+
+3. **Create Your First Fiverr Gig** — Set up your Fiverr account and publish one live gig. Use the prompt from the lesson to write the listing, then review it yourself before publishing. Share the live gig link with me in the next lesson. If you already have a Fiverr account, update your gig description and add your new portfolio pieces as gig images.

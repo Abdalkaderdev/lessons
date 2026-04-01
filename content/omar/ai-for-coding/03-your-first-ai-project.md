@@ -291,3 +291,11 @@ You have finished the AI for Coding module. You now know:
 Your next modules:
 - **AI for Jobs** — use AI to build a CV, prepare for interviews, and land opportunities
 - **AI for Money** — use AI to manage your finances and start earning
+
+---
+
+## Homework
+
+1. **Ship the Other Project** — If you built the link-in-bio page in this lesson, now build the quiz app (or vice versa). Follow the full workflow: plan with Claude, build with v0.dev, convert to a single HTML file, push to a new GitHub repo, and deploy on Vercel. Send the live URL to a friend or family member and ask them to try it.
+2. **Break It and Fix It** — Open your deployed project's HTML file and deliberately introduce two bugs (e.g. delete a closing tag, change a variable name, remove a CSS rule). Open the broken file in Chrome, press F12, copy the console errors, and paste them into Claude with the prompt: "My project is showing these errors: [paste errors]. Here is my code: [paste code]. Fix both issues." Verify the fixes work, then re-upload to GitHub so Vercel redeploys.
+3. **Add a New Feature After Launch** — Pick one meaningful feature to add to your live project (e.g. a dark/light mode toggle for the link-in-bio, or a question category selector for the quiz). Ask Claude to write the code for it, merge it into your existing HTML file, test locally, then push the update to GitHub. Confirm the live URL updates automatically on Vercel.

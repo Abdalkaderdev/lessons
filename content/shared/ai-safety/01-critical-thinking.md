@@ -225,3 +225,13 @@ You don't need to fact-check everything. You need to know *when* to fact-check.
 ---
 
 *Next lesson: Using AI Responsibly — privacy, deepfakes, bias, and why your own skills still matter.*
+
+---
+
+## Homework
+
+1. **Hallucination Hunt** — Ask Claude or ChatGPT to tell you 5 interesting facts about a topic you know well (a hobby, your favorite sport, a subject you study). Read the response carefully and fact-check every specific claim using the 3-Source Rule. Write down which facts checked out, which were wrong or exaggerated, and which you could not verify. Include the sources you used.
+
+2. **Fake Citation Detective** — Ask any AI: "Recommend 3 academic papers about [a topic you are studying]." Copy the titles and authors it gives you and search for each one on [Google Scholar](https://scholar.google.com). Report back: how many actually exist? For any that do not exist, describe what made them look convincing.
+
+3. **Fact-Check a Friend's AI Output** — Ask a classmate or family member to share something they recently got from an AI tool (a summary, a set of facts, advice). Apply the 4-step fact-checking process from this lesson. Present your findings to them: what was accurate, what was questionable, and what was outright wrong.

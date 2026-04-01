@@ -10,16 +10,36 @@ const contentDir = path.join(process.cwd(), "content");
 
 export function getModulesForStudent(studentId: string): string[] {
   const studentDir = path.join(contentDir, studentId);
-  if (!fs.existsSync(studentDir)) return [];
-  return fs
-    .readdirSync(studentDir, { withFileTypes: true })
-    .filter((d) => d.isDirectory())
-    .map((d) => d.name)
-    .sort();
+  const studentModules = fs.existsSync(studentDir)
+    ? fs
+        .readdirSync(studentDir, { withFileTypes: true })
+        .filter((d) => d.isDirectory())
+        .map((d) => d.name)
+        .sort()
+    : [];
+
+  // Append shared modules (available to all students)
+  const sharedDir = path.join(contentDir, "shared");
+  const sharedModules = fs.existsSync(sharedDir)
+    ? fs
+        .readdirSync(sharedDir, { withFileTypes: true })
+        .filter((d) => d.isDirectory())
+        .map((d) => `shared:${d.name}`)
+        .sort()
+    : [];
+
+  return [...studentModules, ...sharedModules];
+}
+
+function resolveModulePath(studentId: string, moduleSlug: string): string {
+  if (moduleSlug.startsWith("shared:")) {
+    return path.join(contentDir, "shared", moduleSlug.replace("shared:", ""));
+  }
+  return path.join(contentDir, studentId, moduleSlug);
 }
 
 export function getLessonsForModule(studentId: string, moduleSlug: string): LessonMeta[] {
-  const moduleDir = path.join(contentDir, studentId, moduleSlug);
+  const moduleDir = resolveModulePath(studentId, moduleSlug);
   if (!fs.existsSync(moduleDir)) return [];
   return fs
     .readdirSync(moduleDir)
@@ -39,7 +59,7 @@ export function getLessonsForModule(studentId: string, moduleSlug: string): Less
 }
 
 export function getLesson(studentId: string, moduleSlug: string, lessonSlug: string): Lesson | null {
-  const filePath = path.join(contentDir, studentId, moduleSlug, `${lessonSlug}.md`);
+  const filePath = path.join(resolveModulePath(studentId, moduleSlug), `${lessonSlug}.md`);
   if (!fs.existsSync(filePath)) return null;
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(raw);

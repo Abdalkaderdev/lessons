@@ -240,3 +240,11 @@ That is a real project. You built it in one session. No coding course required.
 
 Lesson 2: AI Development Tools — v0.dev, Bolt.new, Lovable, and Replit Agent.
 We build a personal portfolio page using v0.dev and a full app using Bolt.new.
+
+---
+
+## Homework
+
+1. **Build a Unit Converter** — Open Claude and prompt it to build a unit converter web app (temperature, weight, distance) as a single HTML file. Save it, open it in your browser, and test every conversion. If something is wrong, paste the code back into Claude with a description of the problem and ask it to fix it.
+2. **Practise the Architect Mindset** — Pick an app idea you wish existed (e.g. a countdown timer for exam dates, a recipe scaler, a workout logger). Before writing any prompt, answer the four architect questions from this lesson (problem, users, day-one features, success criteria) in a notes file. Then write one detailed prompt based on your answers and paste it into Claude — save the result as an `.html` file.
+3. **Prompt Comparison** — Take the "bad prompt" example from this lesson ("Make a calculator") and paste it into Claude. Then paste the "good prompt" version. Compare the two results side by side in your browser. Write 3 sentences about what was different and why the detailed prompt produced a better result.

@@ -285,3 +285,13 @@ Try rewriting these vague prompts using the CLEAR framework. Then test them on [
 ---
 
 *Next lesson: Advanced Prompting Tricks — chain-of-thought, role assignment, and how to get AI to critique itself.*
+
+---
+
+## Homework
+
+1. **CLEAR Framework Challenge** — Pick something you actually need help with this week (a school assignment, a personal project, a decision you're making). Write two prompts for it: one quick and vague, one using the full CLEAR framework. Send both to [claude.ai](https://claude.ai) or [chatgpt.com](https://chatgpt.com) in separate chats and screenshot the difference in quality. Write 2-3 sentences explaining what changed.
+
+2. **Prompt Makeover Collection** — Find 3 real prompts you have used in the past (check your AI chat history). Rewrite each one using the CLEAR framework and the Prompt Quality Checklist. For each, note which checklist items the original was missing.
+
+3. **Teach Someone the CLEAR Framework** — Explain the CLEAR framework to a family member or friend who has used AI before but never learned prompting. Help them rewrite one of their own prompts using it. Write down what they found most surprising about the difference.

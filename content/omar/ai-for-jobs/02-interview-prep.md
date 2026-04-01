@@ -265,3 +265,13 @@ You have finished the AI for Jobs module. You now have:
 
 Your next module:
 - **AI for Money** — budget with AI, understand financial basics, and start earning with side hustles
+
+---
+
+## Homework
+
+1. **Run a Full Mock Interview** — Pick a real company and role you are interested in (can be the same job from Lesson 1's homework). Use the full mock interview prompt from Step 7 in Claude and answer all 7 questions without looking at notes. After Claude gives feedback, ask it for your top 3 weaknesses. Write down the weaknesses and what you will do differently next time.
+
+2. **Build Your STAR Story Bank** — Write up 3 STAR stories from your own life using the prompt from Step 3. At least one should come from a school project, and at least one from something outside school (helping at home, organising something with friends, learning a new skill on your own). Save them in a Google Doc titled "Interview STAR Stories" so you can review them before any real interview.
+
+3. **Research and Prepare for a Specific Company** — Use the company research prompt from Step 4 on a company you would genuinely like to work at. Then write your "Why do you want to work here?" answer using the follow-up prompt. Practice saying it aloud and time it — it should be 45-60 seconds. Record yourself on your phone and listen back to check if it sounds natural or robotic.

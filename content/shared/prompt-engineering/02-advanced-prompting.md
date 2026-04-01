@@ -240,3 +240,13 @@ These are real prompts you can use immediately. Just fill in the brackets.
 ---
 
 *Next lesson: Prompt Templates You'll Use Forever — copy-paste ready templates for every situation.*
+
+---
+
+## Homework
+
+1. **Self-Critique Loop** — Ask Claude or ChatGPT to write a short explanation of a topic you are currently studying. Then use the self-critique trick: ask the AI to score its own response out of 10, identify the two weakest parts, and rewrite them. Do this for two rounds. Save the original and the final version side-by-side and note how much it improved.
+
+2. **Role Assignment Experiment** — Pick one task (e.g., getting feedback on something you wrote, or asking for advice on a decision). Run the exact same request three times, each time assigning a different role (e.g., "You are a strict English teacher," "You are a supportive mentor," "You are a brutally honest editor"). Compare the three responses and write a short paragraph about how the role changed the output.
+
+3. **Build Your Own System Prompt** — Create a custom system prompt for a use case you will actually return to regularly (study tutor, writing coach, workout planner, project brainstormer). Test it in a real conversation, iterate on it at least twice, and save the final version somewhere you can reuse it.

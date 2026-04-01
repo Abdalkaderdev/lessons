@@ -268,3 +268,13 @@ Use these for reflection or class discussion:
 ---
 
 *You've completed the AI Safety module. You can now catch AI errors and use AI with real ethical awareness — that puts you ahead of most adults.*
+
+---
+
+## Homework
+
+1. **Privacy Audit** — Review your last 10 conversations with any AI tool. For each one, check whether you shared any personally identifying information (name, location, school, age combined with other details). Rewrite any prompts that overshared so they get the same result without exposing personal data. Write a short summary of what you found.
+
+2. **Bias Test** — Ask an AI image generator (like ChatGPT with DALL-E) to generate images for 5 different professions: "a CEO," "a nurse," "a software engineer," "a teacher," and "a construction worker." Look at the results and note any patterns in gender, race, or age. Then ask the same tool to generate "a CEO who is a young Black woman" and compare. Write 3-4 sentences about what this tells you about AI bias.
+
+3. **AI Use Case Debate** — Pick one of these scenarios and write a short argument (150-200 words) for both sides: (a) A student uses AI to brainstorm essay ideas and then writes the essay themselves — is that cheating? (b) A company uses AI to screen job applications before a human ever sees them — is that fair? Share your arguments with someone and discuss which side is stronger.

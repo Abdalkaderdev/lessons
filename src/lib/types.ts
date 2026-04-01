@@ -11,7 +11,8 @@ export interface Lesson extends LessonMeta {
 }
 
 export function formatModuleName(slug: string): string {
-  return slug
+  const name = slug.startsWith("shared:") ? slug.replace("shared:", "") : slug;
+  return name
     .replace(/^ai-for-/, "AI for ")
     .replace(/-/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase());

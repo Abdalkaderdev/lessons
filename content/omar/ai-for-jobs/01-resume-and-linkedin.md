@@ -224,3 +224,13 @@ written professionally, ready to send.
 
 Lesson 2: Interview Prep with AI — practice common interview questions,
 get AI feedback on your answers, and learn how to research any company in 10 minutes.
+
+---
+
+## Homework
+
+1. **Tailor Your CV for a Real Job** — Find a job listing you would actually apply for (part-time retail, tech internship, work experience, anything). Copy the job description, paste it into Claude along with your CV, and use the Step 4 prompt to generate a tailored version. Save both the original and tailored CVs as PDFs in Google Docs. Be ready to show the differences in the next lesson.
+
+2. **Complete Your LinkedIn Profile** — Set up your LinkedIn account (or finish it if you started in class). Write your headline and About section using the prompts from Steps 5. Add at least two of your web projects with live Vercel links. Send your profile URL to Dad so he can review it.
+
+3. **Write a Cover Letter for Your Chosen Job** — Using the same job listing from task 1, write a cover letter with Claude using the cover letter prompt from the lesson. Read it aloud to yourself — if any sentence sounds like something you would never actually say, rewrite it with Claude until it sounds like you. Save it as a separate PDF alongside your tailored CV.

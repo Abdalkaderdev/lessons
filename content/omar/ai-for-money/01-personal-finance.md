@@ -237,3 +237,11 @@ By the end of this lesson you have:
 
 Lesson 2: Side Hustle Ideas with AI — use AI to find ways to earn money now,
 build a freelance portfolio, and create your first service offering on Fiverr or Upwork.
+
+## Homework
+
+1. **Track Every Pound for One Week** — Starting today, write down every single thing you spend money on for 7 days. Use your phone notes or a simple Google Sheet. At the end of the week, paste the full list into Claude with this prompt: "Here is everything I spent money on this week. Categorise each item as a Need, Want, or Future Self expense. Show me the totals for each category and tell me what percentage of my spending went to each. Then suggest one realistic change I could make next week to move closer to the 50/30/20 split."
+
+2. **Find and Switch One Better Deal** — Pick one thing you currently pay for monthly (phone contract, a subscription, transport). Use Claude to research cheaper alternatives with this prompt: "I currently pay [amount] per month for [service]. Find me a cheaper option available in the UK for someone aged 17. Compare the current deal vs the alternative in a table showing price, what's included, and savings per year." Act on the best option you find — cancel, switch, or downgrade.
+
+3. **Set Up a Savings Account and Automate It** — If you do not already have a separate savings account, open one this week (Monzo, Starling, or your existing bank). Set up an automatic transfer of at least £10 on the day you receive any income. Ask Claude: "I earn about [amount] per month. I want to build an emergency fund of £300. Create a simple savings plan that shows me exactly how many months it will take if I save [amount] per month, and give me a motivational milestone for each £50 I hit."

@@ -546,3 +546,13 @@ Don't just use these templates once. Build your own library:
 ---
 
 *You've completed the Prompt Engineering module. You now know how to write great prompts, use advanced techniques, and have a full library of templates ready to go. This is the foundation everything else builds on.*
+
+---
+
+## Homework
+
+1. **Template Test Drive** — Choose 3 templates from different sections of this lesson (e.g., one Research, one Writing, one Brainstorming). Use each one for a real task you have this week — not a made-up exercise. After using each template, write one sentence about what you would change to make it work better for your specific situation.
+
+2. **Create Your Own Template** — Design a prompt template for a task you do repeatedly that is not covered in this lesson (e.g., planning a weekly schedule, preparing for a sports match, reviewing notes before a test, writing a thank-you message). Follow the same format: brackets for blanks, clear instructions, and a tweak suggestion at the end. Test it on [claude.ai](https://claude.ai) or [chatgpt.com](https://chatgpt.com) and refine it until you are happy with the output.
+
+3. **Cross-Platform Comparison** — Take Template L2 (Explain It Different Ways) and use it on both Claude and ChatGPT with the same topic filled in. Compare which AI gave the better set of explanations for your level. Write 3 bullet points about the differences you noticed.

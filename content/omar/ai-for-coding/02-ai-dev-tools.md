@@ -240,3 +240,11 @@ Three real, working projects. Built today. Zero lines of code written by hand.
 
 Lesson 3: Your First AI Project — end-to-end from idea to a live URL.
 We use Claude to plan, v0 to build, GitHub to store, and Vercel to deploy.
+
+---
+
+## Homework
+
+1. **Build a Flashcard App with Bolt.new** — Go to [bolt.new](https://bolt.new) and prompt it to build a flashcard study app for a subject you are currently studying. It should let you flip cards, mark ones you got right or wrong, and show your score at the end. Add at least 10 real flashcards from your actual coursework. Download the finished code to your computer.
+2. **Redesign Your Portfolio 3 Times** — Open [v0.dev](https://v0.dev) and generate three completely different portfolio designs by changing only the style instructions in your prompt (e.g. "minimal black and white", "bold neon cyberpunk", "soft pastel editorial"). Screenshot all three and pick your favourite. Write down which prompt produced the best result and why.
+3. **Tool Comparison Report** — Take the same app idea (e.g. a to-do list) and build it once in Bolt.new and once using Replit Agent. Note the differences: which was faster, which looked better, which had more features out of the box. Write a short paragraph (4-5 sentences) comparing the two experiences.

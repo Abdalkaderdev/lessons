@@ -311,3 +311,13 @@ That's worth something.
 ---
 
 *You've completed all three Foundation modules. You know how to prompt well, think critically about AI outputs, use AI ethically, and understand where this technology is heading. Everything from here builds on this base.*
+
+---
+
+## Homework
+
+1. **Future Job Report** — Pick a career you are genuinely interested in. Use [Perplexity](https://perplexity.ai) or Claude to research how AI is already being used in that field today. Then write a one-page summary (300-400 words) covering: what tasks AI handles now, what tasks still require humans, and one prediction you have for how the job will look in 5 years.
+
+2. **Build Something With AI** — Use any AI tool to create a real, shareable project you could not have made alone. Ideas: a short story with AI-generated illustrations, a simple website or app prototype, a study guide for an upcoming test, or a video script with a storyboard. Share it with at least one person and ask for their honest feedback.
+
+3. **AI News Tracker** — Subscribe to one newsletter or YouTube channel from the "How to Stay Updated" list in this lesson. Follow it for one week, then write a 3-bullet summary of the most interesting thing you learned, how it connects to something from this course, and one question it raised that you want to explore further.
