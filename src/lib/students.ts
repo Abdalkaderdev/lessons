@@ -1,11 +1,10 @@
 export interface Student {
   id: string;
   name: string;
-  age: number;
   gradient: string;
   accentColor: string;
   bgTint: string;
-  emoji: string;
+  icon: string;
   tagline: string;
   description: string;
   modules: string[];
@@ -15,38 +14,35 @@ export const students: Student[] = [
   {
     id: "omar",
     name: "Omar",
-    age: 17,
     gradient: "from-cyan-400 via-blue-500 to-indigo-600",
     accentColor: "#3b82f6",
     bgTint: "rgba(59, 130, 246, 0.06)",
-    emoji: "rocket",
+    icon: "rocket",
     tagline: "Builder",
-    description: "AI for Websites, School, Social Media & Design, Images",
-    modules: ["ai-for-websites", "ai-for-school", "ai-for-social-media", "ai-for-images"],
+    description: "Websites, School, Social Media, Design, Coding, Career",
+    modules: ["ai-for-websites", "ai-for-school", "ai-for-social-media", "ai-for-images", "ai-for-coding", "ai-for-jobs", "ai-for-money"],
   },
   {
     id: "fares",
     name: "Fares",
-    age: 10,
     gradient: "from-emerald-400 via-teal-500 to-cyan-600",
     accentColor: "#14b8a6",
     bgTint: "rgba(20, 184, 166, 0.06)",
-    emoji: "sparkles",
+    icon: "sparkle",
     tagline: "Explorer",
-    description: "AI for Studying, Fun, Creativity",
-    modules: ["ai-for-studying", "ai-for-fun", "ai-for-creativity"],
+    description: "Studying, Fun, Creativity, Languages, Health",
+    modules: ["ai-for-studying", "ai-for-fun", "ai-for-creativity", "ai-for-languages", "ai-for-health"],
   },
   {
     id: "ali",
     name: "Ali",
-    age: 20,
     gradient: "from-amber-400 via-orange-500 to-red-600",
     accentColor: "#f59e0b",
     bgTint: "rgba(245, 158, 11, 0.06)",
-    emoji: "briefcase",
+    icon: "briefcase",
     tagline: "Strategist",
-    description: "AI for Business, Writing, Data, Websites/Apps, Productivity",
-    modules: ["ai-for-business", "ai-for-writing", "ai-for-data", "ai-for-websites", "ai-for-productivity"],
+    description: "Business, Writing, Data, Marketing, Legal, Hiring, Websites",
+    modules: ["ai-for-business", "ai-for-writing", "ai-for-data", "ai-for-websites", "ai-for-productivity", "ai-for-hiring", "ai-for-legal", "ai-for-marketing", "ai-for-customer-service"],
   },
 ];
 

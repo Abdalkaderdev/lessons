@@ -10,7 +10,10 @@
       "Bash(ls:*)",
       "Bash(grep:*)",
       "Bash(npm run:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebSearch",
+      "WebFetch(domain:theresanaiforthat.com)",
+      "Bash(find /c/Users/max/lessons/content/omar/ai-for-images -name *.md -type f)"
     ]
   }
 }

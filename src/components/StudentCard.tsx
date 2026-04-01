@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { Student } from "@/lib/students";
-
-const emojiMap: Record<string, string> = {
-  rocket: "\u{1F680}",
-  sparkles: "\u{2728}",
-  briefcase: "\u{1F4BC}",
-};
+import { StudentIcon, ArrowRightIcon } from "./Icons";
 
 export default function StudentCard({ student }: { student: Student }) {
   return (
@@ -21,30 +16,29 @@ export default function StudentCard({ student }: { student: Student }) {
         style={{ background: `radial-gradient(circle, ${student.accentColor}15, transparent 70%)` }}
       />
 
-      {/* Emoji + Tagline */}
-      <div className="flex items-center gap-2.5 mb-6">
-        <span className="text-2xl">{emojiMap[student.emoji] || ""}</span>
+      {/* Icon + Tagline */}
+      <div className="flex items-center gap-3 mb-6">
+        <div
+          className={`w-10 h-10 rounded-xl bg-gradient-to-br ${student.gradient} flex items-center justify-center`}
+        >
+          <StudentIcon icon={student.icon} size={20} color="white" />
+        </div>
         <span className="card-tagline" style={{ color: student.accentColor }}>
           {student.tagline}
         </span>
       </div>
 
-      {/* Name — big and editorial */}
+      {/* Name */}
       <h3
-        className="card-name text-4xl mb-1 leading-tight"
+        className="card-name text-4xl mb-4 leading-tight"
         style={{ fontFamily: 'var(--font-display)', color: 'var(--text-primary)' }}
       >
         {student.name}
       </h3>
 
-      {/* Age */}
-      <p className="text-sm mb-5" style={{ color: 'var(--text-muted)' }}>
-        {student.age} years old
-      </p>
-
       {/* Divider */}
       <div
-        className="h-px mb-5 opacity-60"
+        className="h-px mb-4 opacity-60"
         style={{ background: `linear-gradient(to right, ${student.accentColor}40, transparent)` }}
       />
 
@@ -58,12 +52,11 @@ export default function StudentCard({ student }: { student: Student }) {
         <span className="text-xs font-medium" style={{ color: 'var(--text-muted)' }}>
           {student.modules.length} module{student.modules.length !== 1 ? 's' : ''}
         </span>
-        <span
-          className="text-sm transition-transform duration-300 group-hover:translate-x-1"
-          style={{ color: student.accentColor }}
-        >
-          &rarr;
-        </span>
+        <ArrowRightIcon
+          size={16}
+          color={student.accentColor}
+          className="transition-transform duration-300 group-hover:translate-x-1"
+        />
       </div>
     </Link>
   );
