@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --use-npm)",
+      "Bash(npx create-next-app@latest --help)",
+      "Bash(npx:*)",
+      "Bash(cp /tmp/nextjs-scaffold/package.json /c/Users/max/lessons/package.json)",
+      "Bash(cp /tmp/nextjs-scaffold/package-lock.json /c/Users/max/lessons/package-lock.json)",
+      "Bash(cp /tmp/nextjs-scaffold/tsconfig.json /c/Users/max/lessons/tsconfig.json)",
+      "Bash(cp /tmp/nextjs-scaffold/next.config.ts /c/Users/max/lessons/next.config.ts)",
+      "Bash(cp /tmp/nextjs-scaffold/postcss.config.mjs /c/Users/max/lessons/postcss.config.mjs)",
+      "Bash(cp -r /tmp/nextjs-scaffold/src /c/Users/max/lessons/src)",
+      "Bash(cp -r /tmp/nextjs-scaffold/public /c/Users/max/lessons/public)",
+      "Bash(cp:*)",
+      "Bash(npm install:*)",
+      "Bash(timeout 30 npm run dev)",
+      "Bash(node -e \"require\\(''''next''''\\)\")",
+      "Bash(node:*)"
+    ]
+  }
+}
