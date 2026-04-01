@@ -11,9 +11,10 @@ interface LessonViewerProps {
   title: string;
   studentName: string;
   accentColor?: string;
+  readingTime?: number;
 }
 
-export default function LessonViewer({ content, title, studentName, accentColor = "var(--accent-warm)" }: LessonViewerProps) {
+export default function LessonViewer({ content, title, studentName, accentColor = "var(--accent-warm)", readingTime }: LessonViewerProps) {
   const [isSlideMode, setIsSlideMode] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(1);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -88,6 +89,11 @@ export default function LessonViewer({ content, title, studentName, accentColor 
             Full Page
           </button>
         </div>
+        {readingTime != null && (
+          <span className="text-xs" style={{ color: 'var(--text-muted)' }}>
+            ~{readingTime} min read
+          </span>
+        )}
         <div className="flex items-center gap-2">
           <button
             onClick={() => setIsFullscreen((f) => !f)}

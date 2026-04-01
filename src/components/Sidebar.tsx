@@ -7,6 +7,7 @@ import { Student } from "@/lib/students";
 import { LessonMeta, formatModuleName } from "@/lib/types";
 import { StudentIcon } from "./Icons";
 import ThemeToggle from "./ThemeToggle";
+import SearchBar from "./SearchBar";
 
 interface SidebarProps {
   student: Student;
@@ -119,8 +120,13 @@ export default function Sidebar({ student, modules }: SidebarProps) {
           </div>
         </div>
 
+        {/* Search */}
+        <div className="px-4 pt-4 pb-2">
+          <SearchBar studentId={student.id} />
+        </div>
+
         {/* Navigation */}
-        <nav className="flex-1 p-4">
+        <nav className="flex-1 p-4 overflow-y-auto">
           <Link
             href={`/${student.id}`}
             className={`sidebar-link block px-3 py-2 rounded-lg text-sm mb-3 ${

@@ -73,6 +73,37 @@ export function getLesson(studentId: string, moduleSlug: string, lessonSlug: str
   };
 }
 
+export interface AdjacentLesson {
+  moduleSlug: string;
+  slug: string;
+  title: string;
+}
+
+export function getAdjacentLessons(
+  studentId: string,
+  moduleSlug: string,
+  lessonSlug: string
+): { prev: AdjacentLesson | null; next: AdjacentLesson | null } {
+  const modules = getModulesForStudent(studentId);
+  const allLessons: AdjacentLesson[] = [];
+
+  for (const mod of modules) {
+    const lessons = getLessonsForModule(studentId, mod);
+    for (const l of lessons) {
+      allLessons.push({ moduleSlug: mod, slug: l.slug, title: l.title });
+    }
+  }
+
+  const currentIndex = allLessons.findIndex(
+    (l) => l.moduleSlug === moduleSlug && l.slug === lessonSlug
+  );
+
+  return {
+    prev: currentIndex > 0 ? allLessons[currentIndex - 1] : null,
+    next: currentIndex < allLessons.length - 1 ? allLessons[currentIndex + 1] : null,
+  };
+}
+
 export function getCurriculum(studentId: string): string | null {
   const filePath = path.join(contentDir, studentId, "curriculum.md");
   if (!fs.existsSync(filePath)) return null;
