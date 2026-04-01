@@ -40,11 +40,39 @@ Think like a designer, storyteller, and inventor. Build your own world and your 
 
 ---
 
+## Module 4: AI for Languages
+
+Use AI to learn any language on Earth — through games, conversations, stories, and challenges. No boring textbooks required.
+
+| # | Lesson | What You'll Do |
+|---|--------|----------------|
+| 1 | [Learn a New Language with AI](./ai-for-languages/01-learn-a-language.md) | Use Claude and Google Translate to practice vocabulary, have conversations, and build your first phrasebook |
+| 2 | [Language Games & Challenges](./ai-for-languages/02-language-games.md) | Play translation races, emoji puzzles, story games, and a 7-day language challenge |
+
+---
+
+## Module 5: AI for Health
+
+Discover how AI can help you move more, eat smarter, sleep better, and build habits that stick — all in a fun and practical way.
+
+| # | Lesson | What You'll Do |
+|---|--------|----------------|
+| 1 | [AI for Fitness & Sports](./ai-for-health/01-fitness-and-sports.md) | Get a custom workout, learn sports rules and science, and build a weekly training plan |
+| 2 | [Building Healthy Habits with AI](./ai-for-health/02-healthy-habits.md) | Design a morning routine, sleep schedule, snack plan, and 30-day habit tracker |
+
+---
+
 ## Learning Path
 
 ```
 Module 1: AI for Studying  -->  Module 2: AI for Fun  -->  Module 3: AI for Creativity
 (3 lessons)                      (3 lessons)                  (2 lessons)
+
+        |
+        v
+
+Module 4: AI for Languages  -->  Module 5: AI for Health
+(2 lessons)                       (2 lessons)
 ```
 
 Each lesson takes about 30-45 minutes. No coding. No pressure. Just exploration and creativity!

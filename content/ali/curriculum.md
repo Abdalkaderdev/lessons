@@ -23,8 +23,12 @@ Every lesson is hands-on and immediately applicable. Ali should be able to finis
 | AI for Data | 3 | Spreadsheets, data analysis, financial analysis |
 | AI for Websites | 3 | Building sites, deployment, e-commerce & SEO |
 | AI for Productivity | 3 | Task management, decision making, automation |
+| AI for Hiring | 2 | Recruitment, team management, performance reviews |
+| AI for Legal | 2 | Contracts, compliance, privacy, business law basics |
+| AI for Marketing | 3 | Digital marketing, email campaigns, content strategy |
+| AI for Customer Service | 2 | Customer communication, chatbots, automation |
 
-**Total: 16 lessons**
+**Total: 25 lessons**
 
 ---
 
@@ -154,6 +158,86 @@ Outcome: At least 2 working automations and a 90-day automation roadmap.
 
 ---
 
+## Module 6: AI for Hiring
+
+*Recruiting the right people and managing teams effectively with AI*
+
+### Lesson 1 — Recruitment & Hiring with AI
+`content/ali/ai-for-hiring/01-recruitment-with-ai.md`
+
+Topics: Writing job descriptions, screening criteria and rubrics, interview question generation (behavioral, situational, role-specific), candidate evaluation scorecards, drafting offer letters. Tools: Claude, ChatGPT, LinkedIn.
+Outcome: A complete hiring toolkit — job description, screening rubric, interview questions, evaluation scorecard, and offer letter template.
+
+### Lesson 2 — Team Management with AI
+`content/ali/ai-for-hiring/02-team-management.md`
+
+Topics: Performance review templates, 1-on-1 meeting agendas, team feedback frameworks (360-degree, upward, peer), onboarding checklists (30-60-90 day), training material and SOP creation.
+Outcome: A complete team management toolkit in Notion — performance template, 1-on-1 agenda, feedback surveys, onboarding checklist, and at least one SOP.
+
+---
+
+## Module 7: AI for Legal
+
+*Understanding business law and compliance with AI as your research assistant*
+
+> Note: All legal content in this module is for educational purposes. Always consult a qualified lawyer for actual legal decisions.
+
+### Lesson 1 — Understanding Contracts with AI
+`content/ali/ai-for-legal/01-contracts-and-documents.md`
+
+Topics: Using AI to read and explain legal documents in plain English (NDAs, employment contracts, lease agreements), identifying red flags and one-sided clauses, understanding legal terminology, creating basic contract templates, when to call a real lawyer.
+Outcome: A personal legal glossary and a folder of basic contract templates, with clear understanding of when professional review is required.
+
+### Lesson 2 — Compliance & Business Law Basics
+`content/ali/ai-for-legal/02-compliance-basics.md`
+
+Topics: Business registration research (mainland vs. free zone, UAE context), understanding license types and permits, creating privacy policies and terms of service with AI, GDPR and UAE PDPL data protection basics, building a compliance checklist, tax obligations overview.
+Outcome: A compliance folder with draft privacy policy, terms of service, data register, license tracker, and compliance checklist.
+
+---
+
+## Module 8: AI for Marketing
+
+*Building a complete, AI-powered marketing operation*
+
+### Lesson 1 — Digital Marketing with AI
+`content/ali/ai-for-marketing/01-digital-marketing.md`
+
+Topics: SEO keyword research (AI + Ubersuggest + Semrush free tier), meta descriptions and on-page optimization, Google Ads copy, social media ad creation (Instagram, TikTok), content optimization. Tools: Claude, ChatGPT, Copy.ai, Jasper, Semrush, Ubersuggest.
+Outcome: Keyword list, optimized landing page, Google Ads copy, and social media ad for one product or service.
+
+### Lesson 2 — Email Marketing & Campaigns
+`content/ali/ai-for-marketing/02-email-marketing.md`
+
+Topics: Email marketing fundamentals, growing a list with lead magnets, writing subject lines that get opened, newsletter structure and writing, drip campaign planning, writing automated welcome sequences, A/B testing subject lines. Tools: Mailchimp (free tier), Brevo, Claude.
+Outcome: Mailchimp account set up with an audience, welcome sequence loaded and live, A/B test run on a subject line.
+
+### Lesson 3 — Content Strategy with AI
+`content/ali/ai-for-marketing/03-content-strategy.md`
+
+Topics: Building a 30-day content calendar, blog post writing and SEO optimization, video script writing (short-form Reels/TikTok and long-form YouTube), repurposing one piece of content across platforms, analytics basics (Google Analytics, Instagram Insights, email metrics). Tools: Notion AI, Claude, ChatGPT, Gamma, Google Analytics.
+Outcome: A 30-day content calendar, one full blog post repurposed across three formats, Google Analytics installed.
+
+---
+
+## Module 9: AI for Customer Service
+
+*Handling customers professionally at any volume, with smart automation*
+
+### Lesson 1 — Customer Communication with AI
+`content/ali/ai-for-customer-service/01-customer-communication.md`
+
+Topics: Writing professional responses (email, WhatsApp, DM), handling complaints constructively, responding to negative online reviews, FAQ generation, building a 10-template response library, tone adjustment (empathetic, formal, firm, concise). Tools: Claude, ChatGPT, Notion.
+Outcome: A customer response template library (8–10 templates), FAQ (10 questions), and a one-page customer communication guide.
+
+### Lesson 2 — Chatbots & Customer Automation
+`content/ali/ai-for-customer-service/02-chatbots-and-automation.md`
+
+Topics: How chatbots work and when to use them, setting up Zapier automations (form → email, order → confirmation), building a knowledge base in Notion, designing chatbot conversation flows, setting up live chat and a basic chatbot with Tidio, WhatsApp Business auto-replies, Instagram DM automation with ManyChat.
+Outcome: WhatsApp Business auto-replies configured, one Zapier automation live, Tidio chatbot with at least one flow active, Notion knowledge base complete.
+
+---
+
 ## Completion Milestones
 
 By the end of each module, Ali will have:
@@ -168,7 +252,17 @@ By the end of each module, Ali will have:
 
 **After Module 5:** A productivity system, decision-making framework, and automation pipeline running in the background.
 
-**After all 5 modules:** Ali operates like a one-person business team — with AI handling research, writing, data, web presence, and operations support.
+**After Module 5:** A productivity system, decision-making framework, and automation pipeline running in the background.
+
+**After Module 6:** A complete hiring and team management system — from job posting to performance reviews.
+
+**After Module 7:** A working understanding of key business legal documents and compliance requirements, with a library of templates.
+
+**After Module 8:** A full marketing operation — digital ads, email sequences, and a content calendar running consistently.
+
+**After Module 9:** A professional customer service system with response templates, a knowledge base, a live chatbot, and key automations in place.
+
+**After all 9 modules:** Ali operates like a one-person business team with AI — handling research, writing, data, web presence, operations, hiring, legal foundations, marketing, and customer service.
 
 ---
 

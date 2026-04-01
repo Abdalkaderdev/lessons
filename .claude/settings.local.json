@@ -13,7 +13,12 @@
       "Bash(git push:*)",
       "WebSearch",
       "WebFetch(domain:theresanaiforthat.com)",
-      "Bash(find /c/Users/max/lessons/content/omar/ai-for-images -name *.md -type f)"
+      "Bash(find /c/Users/max/lessons/content/omar/ai-for-images -name *.md -type f)",
+      "Bash(find /c/Users/max/lessons/content/shared -name *.md -type f)",
+      "Bash(while read:*)",
+      "Bash(do grep:*)",
+      "Bash(echo \"$f\")",
+      "Bash(done)"
     ]
   }
 }
