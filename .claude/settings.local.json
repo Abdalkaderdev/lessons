@@ -6,7 +6,9 @@
       "Edit",
       "Write",
       "Glob",
-      "Grep"
+      "Grep",
+      "Bash(ls:*)",
+      "Bash(grep:*)"
     ]
   }
 }
