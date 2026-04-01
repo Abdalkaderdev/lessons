@@ -29,3 +29,19 @@ Creating content, graphics, and building your personal brand with AI.
 Mastering AI image generation for practical design projects.
 1. Image Prompt Engineering
 2. Practical Design Projects
+
+### AI for Coding
+Build real apps and websites using AI tools — no coding knowledge required.
+1. Building Things with AI (No Coding Knowledge Needed)
+2. AI Development Tools
+3. Your First AI Project
+
+### AI for Jobs
+Use AI to write a professional CV, optimise your LinkedIn, and ace interviews.
+1. Resume, CV & LinkedIn with AI
+2. Interview Prep with AI
+
+### AI for Money
+Manage your personal finances, understand investing basics, and start earning with a side hustle.
+1. Personal Finance with AI
+2. Side Hustle Ideas with AI
