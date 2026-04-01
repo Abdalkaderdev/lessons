@@ -24,21 +24,39 @@ export default async function StudentDashboard({
 
   return (
     <div className="max-w-3xl">
-      <h1 className="text-3xl font-bold text-slate-100 mb-2">{student.name}&apos;s Dashboard</h1>
-      <p className="text-slate-400 mb-8">{student.description}</p>
+      <p
+        className="text-[0.65rem] uppercase tracking-[0.2em] font-semibold mb-4"
+        style={{ color: student.accentColor }}
+      >
+        {student.tagline}
+      </p>
+      <h1
+        className="text-4xl mb-2"
+        style={{ fontFamily: 'var(--font-display)', color: 'var(--text-primary)' }}
+      >
+        {student.name}&apos;s Curriculum
+      </h1>
+      <p className="text-sm mb-8" style={{ color: 'var(--text-muted)' }}>
+        {student.description}
+      </p>
 
       {firstLesson && (
         <Link
           href={`/${studentId}/${firstLesson.moduleSlug}/${firstLesson.slug}`}
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg mb-8 transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 hover:translate-x-1 mb-10"
+          style={{
+            background: `${student.accentColor}18`,
+            color: student.accentColor,
+            border: `1px solid ${student.accentColor}30`,
+          }}
         >
-          Start First Lesson &rarr;
+          Start First Lesson <span>&rarr;</span>
         </Link>
       )}
 
       {curriculumHtml && (
         <div
-          className="lesson-body prose-invert"
+          className="lesson-body"
           dangerouslySetInnerHTML={{ __html: curriculumHtml }}
         />
       )}

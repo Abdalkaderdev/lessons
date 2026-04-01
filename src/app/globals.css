@@ -1,87 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-body {
-  @apply bg-slate-950 text-slate-200;
+:root {
+  --bg-deep: #0c0e13;
+  --bg-surface: #14171f;
+  --bg-elevated: #1c2029;
+  --bg-hover: #252a35;
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-medium: rgba(255, 255, 255, 0.1);
+  --text-primary: #f0ece4;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --accent-warm: #e8c17a;
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
 }
 
-/* Print styles */
+body {
+  font-family: var(--font-body);
+  background: var(--bg-deep);
+  color: var(--text-primary);
+}
+
+/* Grain texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px;
+}
+
+/* ===== Home Page ===== */
+
+.home-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home-hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(circle, rgba(232, 193, 122, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ===== Student Cards ===== */
+
+.student-card {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 2.5rem 2rem 2rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.student-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-medium);
+  box-shadow:
+    0 20px 60px -15px rgba(0, 0, 0, 0.5),
+    0 0 0 1px var(--border-medium);
+}
+
+.student-card:hover::before {
+  opacity: 1;
+}
+
+.student-card .card-glow {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.student-card:hover .card-glow {
+  opacity: 1;
+}
+
+.card-initial {
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+.card-name {
+  font-family: var(--font-display);
+}
+
+.card-tagline {
+  font-family: var(--font-body);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+/* ===== Staggered Entrance ===== */
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-entrance {
+  animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.animate-fade {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.35s; }
+.delay-4 { animation-delay: 0.5s; }
+.delay-5 { animation-delay: 0.65s; }
+
+/* ===== Sidebar ===== */
+
+.sidebar {
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border-subtle);
+}
+
+.sidebar-link {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background: var(--bg-hover);
+}
+
+.sidebar-link.active {
+  background: var(--bg-hover);
+}
+
+.sidebar-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  border-radius: 1px;
+}
+
+/* ===== Lesson Viewer ===== */
+
+.viewer-toolbar {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.viewer-btn {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.viewer-btn-default {
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  border-color: var(--border-subtle);
+}
+
+.viewer-btn-default:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.viewer-btn-active {
+  background: rgba(232, 193, 122, 0.15);
+  color: var(--accent-warm);
+  border-color: rgba(232, 193, 122, 0.3);
+}
+
+.viewer-btn-accent {
+  background: rgba(232, 193, 122, 0.12);
+  color: var(--accent-warm);
+  border-color: rgba(232, 193, 122, 0.2);
+}
+
+.viewer-btn-accent:hover {
+  background: rgba(232, 193, 122, 0.2);
+}
+
+/* ===== Slide Controls ===== */
+
+.slide-controls {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* ===== Lesson Content Styling ===== */
+
+.lesson-body {
+  font-family: var(--font-body);
+  line-height: 1.8;
+}
+
+.lesson-body h1,
+.lesson-body h2,
+.lesson-body h3 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+}
+
+.lesson-body h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.lesson-body h2 {
+  font-size: 1.6rem;
+  color: var(--accent-warm);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.lesson-body h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.lesson-body p {
+  color: var(--text-secondary);
+  margin-bottom: 1.2rem;
+}
+
+.lesson-body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.lesson-body a {
+  color: var(--accent-warm);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(232, 193, 122, 0.3);
+  transition: border-color 0.2s;
+}
+
+.lesson-body a:hover {
+  border-bottom-color: var(--accent-warm);
+}
+
+.lesson-body code {
+  background: var(--bg-elevated);
+  color: var(--accent-warm);
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 0.88em;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.lesson-body pre {
+  background: var(--bg-deep) !important;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.lesson-body pre code {
+  background: none;
+  padding: 0;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.lesson-body blockquote {
+  border-left: 2px solid var(--accent-warm);
+  padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  background: rgba(232, 193, 122, 0.04);
+  border-radius: 0 10px 10px 0;
+}
+
+.lesson-body blockquote p {
+  color: var(--text-primary);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.lesson-body ul, .lesson-body ol {
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+}
+
+.lesson-body li {
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+.lesson-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.lesson-body th {
+  background: var(--bg-elevated);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.lesson-body td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.lesson-body hr {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 2.5rem 0;
+}
+
+/* ===== Print Styles ===== */
 @media print {
   body {
     background: white !important;
     color: black !important;
+    font-family: 'DM Sans', system-ui, sans-serif !important;
   }
 
-  .no-print {
-    display: none !important;
-  }
+  body::before { display: none !important; }
+  .no-print { display: none !important; }
+  .print-only { display: block !important; }
 
-  .print-only {
-    display: block !important;
-  }
-
-  .lesson-body h1 {
-    font-size: 24pt;
-    color: black;
-    border-bottom: 2px solid #333;
-    padding-bottom: 8px;
-    margin-bottom: 16px;
-  }
-
-  .lesson-body h2 {
-    font-size: 16pt;
-    color: #222;
-    margin-top: 20px;
-  }
-
-  .lesson-body h3 {
-    font-size: 13pt;
-    color: #333;
-  }
-
-  .lesson-body pre {
-    background: #f5f5f5 !important;
-    border: 1px solid #ddd;
-    padding: 12px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-
-  .lesson-body code {
-    background: #f0f0f0 !important;
-    color: black !important;
-  }
-
-  .lesson-body blockquote {
-    border-left: 3px solid #666;
-    padding: 8px 16px;
-    background: #f9f9f9;
-  }
-
-  .lesson-body table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  .lesson-body th,
-  .lesson-body td {
-    border: 1px solid #ccc;
-    padding: 6px 10px;
-    text-align: left;
-  }
-
-  .lesson-body th {
-    background: #eee;
-  }
-
-  .lesson-body a {
-    color: black;
-    text-decoration: underline;
-  }
+  .lesson-body h1 { font-size: 22pt; color: black; border-bottom: 2px solid #333; padding-bottom: 8px; }
+  .lesson-body h2 { font-size: 15pt; color: #222; }
+  .lesson-body h3 { font-size: 12pt; color: #333; }
+  .lesson-body p, .lesson-body li { color: #333; }
+  .lesson-body pre { background: #f5f5f5 !important; border: 1px solid #ddd; padding: 12px; white-space: pre-wrap; }
+  .lesson-body code { background: #f0f0f0 !important; color: #333 !important; }
+  .lesson-body blockquote { border-left: 3px solid #666; padding: 8px 16px; background: #f9f9f9; }
+  .lesson-body table { border-collapse: collapse; width: 100%; }
+  .lesson-body th, .lesson-body td { border: 1px solid #ccc; padding: 6px 10px; }
+  .lesson-body th { background: #eee; }
+  .lesson-body a { color: black; text-decoration: underline; }
 }
 
 @media screen {
-  .print-only {
-    display: none;
-  }
+  .print-only { display: none; }
 }

@@ -18,20 +18,28 @@ export default async function LessonPage({
 
   return (
     <div className="flex flex-col h-full">
-      <nav className="flex items-center gap-2 text-sm text-slate-400 px-6 py-3 border-b border-slate-700 no-print">
-        <Link href="/" className="hover:text-blue-400 transition-colors">Home</Link>
-        <span>/</span>
-        <Link href={`/${studentId}`} className="hover:text-blue-400 transition-colors">{student.name}</Link>
-        <span>/</span>
-        <span className="text-slate-500">{formatModuleName(moduleSlug)}</span>
-        <span>/</span>
-        <span className="text-slate-200">{lesson.title}</span>
+      <nav
+        className="flex items-center gap-2 text-sm px-6 py-3 no-print"
+        style={{ borderBottom: '1px solid var(--border-subtle)', color: 'var(--text-muted)' }}
+      >
+        <Link href="/" className="transition-colors hover:opacity-100 opacity-60" style={{ color: 'var(--text-secondary)' }}>
+          Home
+        </Link>
+        <span className="opacity-30">/</span>
+        <Link href={`/${studentId}`} className="transition-colors hover:opacity-100 opacity-60" style={{ color: 'var(--text-secondary)' }}>
+          {student.name}
+        </Link>
+        <span className="opacity-30">/</span>
+        <span className="opacity-40">{formatModuleName(moduleSlug)}</span>
+        <span className="opacity-30">/</span>
+        <span style={{ color: 'var(--text-primary)' }}>{lesson.title}</span>
       </nav>
       <div className="flex-1 overflow-hidden">
         <LessonViewer
           content={lesson.content}
           title={lesson.title}
           studentName={student.name}
+          accentColor={student.accentColor}
         />
       </div>
     </div>

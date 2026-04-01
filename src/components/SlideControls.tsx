@@ -5,25 +5,48 @@ interface SlideControlsProps {
   total: number;
   onPrev: () => void;
   onNext: () => void;
+  accentColor?: string;
 }
 
-export default function SlideControls({ current, total, onPrev, onNext }: SlideControlsProps) {
+export default function SlideControls({ current, total, onPrev, onNext, accentColor = "var(--accent-warm)" }: SlideControlsProps) {
   return (
-    <div className="flex items-center justify-between border-t border-slate-700 px-6 py-3 bg-slate-800/80 no-print">
+    <div className="slide-controls flex items-center justify-between px-6 py-3 no-print">
       <button
         onClick={onPrev}
         disabled={current <= 1}
-        className="px-4 py-2 bg-slate-700 border border-slate-600 rounded text-sm text-slate-200 hover:bg-slate-600 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+        className="viewer-btn viewer-btn-default disabled:opacity-30 disabled:cursor-not-allowed"
       >
-        &larr; Previous
+        &larr; Prev
       </button>
-      <span className="text-slate-400 text-sm">
-        {current} / {total}
-      </span>
+
+      <div className="flex items-center gap-3">
+        {/* Dots indicator */}
+        <div className="flex items-center gap-1.5">
+          {Array.from({ length: Math.min(total, 12) }, (_, i) => (
+            <div
+              key={i}
+              className="rounded-full transition-all duration-300"
+              style={{
+                width: i + 1 === current ? 20 : 6,
+                height: 6,
+                background: i + 1 === current ? accentColor : 'var(--border-medium)',
+                borderRadius: i + 1 === current ? 3 : '50%',
+              }}
+            />
+          ))}
+          {total > 12 && (
+            <span className="text-xs ml-1" style={{ color: 'var(--text-muted)' }}>+{total - 12}</span>
+          )}
+        </div>
+        <span className="text-xs tabular-nums" style={{ color: 'var(--text-muted)' }}>
+          {current}/{total}
+        </span>
+      </div>
+
       <button
         onClick={onNext}
         disabled={current >= total}
-        className="px-4 py-2 bg-slate-700 border border-slate-600 rounded text-sm text-slate-200 hover:bg-slate-600 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+        className="viewer-btn viewer-btn-default disabled:opacity-30 disabled:cursor-not-allowed"
       >
         Next &rarr;
       </button>

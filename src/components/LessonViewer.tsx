@@ -9,9 +9,10 @@ interface LessonViewerProps {
   content: string;
   title: string;
   studentName: string;
+  accentColor?: string;
 }
 
-export default function LessonViewer({ content, title, studentName }: LessonViewerProps) {
+export default function LessonViewer({ content, title, studentName, accentColor = "var(--accent-warm)" }: LessonViewerProps) {
   const [isSlideMode, setIsSlideMode] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(1);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -69,23 +70,19 @@ export default function LessonViewer({ content, title, studentName }: LessonView
   const progressPercent = isSlideMode ? (currentSlide / totalSlides) * 100 : 100;
 
   return (
-    <div className={isFullscreen ? "fixed inset-0 z-50 bg-slate-950 flex flex-col" : "flex flex-col h-full"}>
+    <div className={isFullscreen ? "fixed inset-0 z-50 flex flex-col" : "flex flex-col h-full"} style={{ background: 'var(--bg-deep)' }}>
       {/* Toolbar */}
-      <div className="flex items-center justify-between px-6 py-3 border-b border-slate-700 no-print">
-        <div className="flex items-center gap-3">
+      <div className="viewer-toolbar flex items-center justify-between px-6 py-3 no-print">
+        <div className="flex items-center gap-2">
           <button
             onClick={() => { setIsSlideMode(true); setCurrentSlide(1); }}
-            className={`px-3 py-1.5 rounded text-sm transition-colors ${
-              isSlideMode ? "bg-blue-600 text-white" : "bg-slate-700 text-slate-300 hover:bg-slate-600"
-            }`}
+            className={`viewer-btn ${isSlideMode ? "viewer-btn-active" : "viewer-btn-default"}`}
           >
             Slides
           </button>
           <button
             onClick={() => setIsSlideMode(false)}
-            className={`px-3 py-1.5 rounded text-sm transition-colors ${
-              !isSlideMode ? "bg-blue-600 text-white" : "bg-slate-700 text-slate-300 hover:bg-slate-600"
-            }`}
+            className={`viewer-btn ${!isSlideMode ? "viewer-btn-active" : "viewer-btn-default"}`}
           >
             Full Page
           </button>
@@ -93,14 +90,14 @@ export default function LessonViewer({ content, title, studentName }: LessonView
         <div className="flex items-center gap-2">
           <button
             onClick={() => setIsFullscreen((f) => !f)}
-            className="px-3 py-1.5 bg-slate-700 border border-slate-600 rounded text-sm text-slate-300 hover:bg-slate-600 transition-colors"
+            className="viewer-btn viewer-btn-default"
             title="Toggle fullscreen (F)"
           >
             {isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
           </button>
           <button
             onClick={handlePrint}
-            className="px-3 py-1.5 bg-blue-700 border border-blue-600 rounded text-sm text-white hover:bg-blue-600 transition-colors"
+            className="viewer-btn viewer-btn-accent"
             title="Print / Save as PDF (P)"
           >
             Print PDF
@@ -110,17 +107,20 @@ export default function LessonViewer({ content, title, studentName }: LessonView
 
       {/* Progress bar */}
       {isSlideMode && (
-        <div className="h-1 bg-slate-800 no-print">
+        <div className="h-[2px] no-print" style={{ background: 'var(--border-subtle)' }}>
           <div
-            className="h-full bg-blue-500 transition-all duration-300"
-            style={{ width: `${progressPercent}%` }}
+            className="h-full transition-all duration-500 ease-out"
+            style={{
+              width: `${progressPercent}%`,
+              background: accentColor,
+            }}
           />
         </div>
       )}
 
       {/* Content */}
-      <div className="flex-1 overflow-y-auto px-8 py-8">
-        {/* Print header (hidden on screen) */}
+      <div className="flex-1 overflow-y-auto px-8 py-10">
+        {/* Print header */}
         <div className="print-only mb-6 pb-4 border-b-2 border-gray-300">
           <p className="text-gray-500 text-sm">
             Student: {studentName} &mdash; {title}
@@ -128,21 +128,22 @@ export default function LessonViewer({ content, title, studentName }: LessonView
         </div>
 
         <div
-          className="lesson-body max-w-3xl prose prose-invert prose-slate prose-headings:text-slate-100 prose-p:text-slate-300 prose-a:text-blue-400 prose-strong:text-slate-100 prose-code:text-amber-400 prose-code:bg-slate-700 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-700 prose-blockquote:border-blue-500 prose-blockquote:bg-blue-500/5 prose-th:bg-slate-700 prose-td:border-slate-700 prose-th:border-slate-600"
+          className="lesson-body max-w-3xl"
           dangerouslySetInnerHTML={{ __html: currentHtml as string }}
         />
 
-        {/* Mark as complete button */}
-        <div className="max-w-3xl mt-8 pt-6 border-t border-slate-700 no-print">
+        {/* Mark as complete */}
+        <div className="max-w-3xl mt-10 pt-6 no-print" style={{ borderTop: '1px solid var(--border-subtle)' }}>
           <button
             onClick={toggleComplete}
-            className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-colors ${
-              completed
-                ? "bg-green-600 text-white"
-                : "bg-slate-700 border border-slate-600 text-slate-300 hover:bg-slate-600"
-            }`}
+            className="px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300"
+            style={{
+              background: completed ? 'rgba(34, 197, 94, 0.15)' : 'var(--bg-elevated)',
+              color: completed ? '#22c55e' : 'var(--text-secondary)',
+              border: `1px solid ${completed ? 'rgba(34, 197, 94, 0.3)' : 'var(--border-subtle)'}`,
+            }}
           >
-            {completed ? "Completed" : "Mark as Complete"}
+            {completed ? "\u2713 Completed" : "Mark as Complete"}
           </button>
         </div>
       </div>
@@ -154,6 +155,7 @@ export default function LessonViewer({ content, title, studentName }: LessonView
           total={totalSlides}
           onPrev={goPrev}
           onNext={goNext}
+          accentColor={accentColor}
         />
       )}
     </div>
