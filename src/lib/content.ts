@@ -24,7 +24,7 @@ export function getModulesForStudent(studentId: string): string[] {
     ? fs
         .readdirSync(sharedDir, { withFileTypes: true })
         .filter((d) => d.isDirectory())
-        .map((d) => `shared:${d.name}`)
+        .map((d) => `shared--${d.name}`)
         .sort()
     : [];
 
@@ -32,8 +32,8 @@ export function getModulesForStudent(studentId: string): string[] {
 }
 
 function resolveModulePath(studentId: string, moduleSlug: string): string {
-  if (moduleSlug.startsWith("shared:")) {
-    return path.join(contentDir, "shared", moduleSlug.replace("shared:", ""));
+  if (moduleSlug.startsWith("shared--")) {
+    return path.join(contentDir, "shared", moduleSlug.replace("shared--", ""));
   }
   return path.join(contentDir, studentId, moduleSlug);
 }

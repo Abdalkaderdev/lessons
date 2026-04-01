@@ -1,4 +1,4 @@
-# Ali's Curriculum (Age 20)
+# Ali's Curriculum
 
 ## Goal
 Build real-world AI-powered applications and understand the technology at a deeper level.

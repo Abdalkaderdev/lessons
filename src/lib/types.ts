@@ -11,7 +11,7 @@ export interface Lesson extends LessonMeta {
 }
 
 export function formatModuleName(slug: string): string {
-  const name = slug.startsWith("shared:") ? slug.replace("shared:", "") : slug;
+  const name = slug.startsWith("shared--") ? slug.replace("shared--", "") : slug;
   return name
     .replace(/^ai-for-/, "AI for ")
     .replace(/-/g, " ")

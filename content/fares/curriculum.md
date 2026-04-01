@@ -1,4 +1,4 @@
-# Fares's Curriculum (Age 10)
+# Fares's Curriculum
 
 ## Goal
 Discover what AI is through fun, visual, and interactive activities — no coding pressure, just curiosity.

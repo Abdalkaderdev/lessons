@@ -1,4 +1,4 @@
-# Omar's Curriculum (Age 17)
+# Omar's Curriculum
 
 ## Goal
 Learn to use AI tools (Claude) to build and deploy real websites using modern tools.

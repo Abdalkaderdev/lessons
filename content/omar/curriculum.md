@@ -1,4 +1,4 @@
-# Omar's Curriculum (Age 17)
+# Omar's Curriculum
 
 ## Goal
 Learn to use AI as a superpower for building websites, school work, social media, and design — without needing to know how to code.
