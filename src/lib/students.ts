@@ -40,9 +40,9 @@ export const students: Student[] = [
     accentColor: "#2D8F6F",
     bgTint: "rgba(45, 143, 111, 0.06)",
     icon: "briefcase",
-    tagline: "Trader",
-    description: "Trading from zero: charts, risk, strategy, psychology, AI-assisted analysis",
-    modules: ["trading-foundations", "reading-charts", "risk-management", "ai-trading-tools", "trading-strategies", "fundamental-analysis", "trading-psychology", "getting-started-safely"],
+    tagline: "Trader & Strategist",
+    description: "Trading from zero plus business, writing, data, marketing, legal, hiring, websites",
+    modules: ["trading-foundations", "reading-charts", "risk-management", "ai-trading-tools", "trading-strategies", "fundamental-analysis", "trading-psychology", "getting-started-safely", "ai-for-business", "ai-for-writing", "ai-for-data", "ai-for-websites", "ai-for-productivity", "ai-for-hiring", "ai-for-legal", "ai-for-marketing", "ai-for-customer-service"],
   },
 ];
 
