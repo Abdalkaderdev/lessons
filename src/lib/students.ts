@@ -34,15 +34,15 @@ export const students: Student[] = [
     modules: ["ai-for-studying", "ai-for-fun", "ai-for-creativity", "ai-for-languages", "ai-for-health"],
   },
   {
-    id: "ali",
-    name: "Ali",
+    id: "fawzi",
+    name: "Fawzi",
     gradient: "linear-gradient(135deg, #3DAA85, #1F7055)",
     accentColor: "#2D8F6F",
     bgTint: "rgba(45, 143, 111, 0.06)",
     icon: "briefcase",
-    tagline: "Strategist",
-    description: "Business, Writing, Data, Marketing, Legal, Hiring, Websites",
-    modules: ["ai-for-business", "ai-for-writing", "ai-for-data", "ai-for-websites", "ai-for-productivity", "ai-for-hiring", "ai-for-legal", "ai-for-marketing", "ai-for-customer-service"],
+    tagline: "Trader",
+    description: "Trading from zero: charts, risk, strategy, psychology, AI-assisted analysis",
+    modules: ["trading-foundations", "reading-charts", "risk-management", "ai-trading-tools", "trading-strategies", "fundamental-analysis", "trading-psychology", "getting-started-safely"],
   },
 ];
 

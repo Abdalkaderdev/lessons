@@ -1,15 +1,29 @@
 # AI Lessons
 
-Teaching AI and technology to three students with personalized, age-appropriate curricula.
+Teaching AI and technology to three students with personalized curricula. Web app deployed at [lessons.abdalkader.dev](https://lessons.abdalkader.dev).
 
 ## Students
 
-| Name  | Age | Level        | Focus Area                        |
-|-------|-----|--------------|-----------------------------------|
-| Omar  | 17  | Intermediate | Web Dev with AI, GitHub, Vercel   |
-| Fares | 10  | Beginner     | Fun intro to AI concepts          |
-| Ali   | 20  | Advanced     | AI/ML, APIs, real-world projects  |
+| Name  | Focus                                                              |
+|-------|--------------------------------------------------------------------|
+| Omar  | Builder — Websites, School, Social Media, Design, Coding, Career   |
+| Fares | Explorer — Studying, Fun, Creativity, Languages, Health            |
+| Fawzi | Trader — Trading from zero: charts, risk, strategy, AI-assisted    |
+
+All students share four foundation modules: Prompt Engineering, AI Safety, Future of AI, AI Tools Reference, and AI Glossary.
 
 ## Structure
 
-Each student has their own folder with a curriculum outline and lesson files.
+- `content/<student>/<module>/<lesson>.md` — student-specific lessons
+- `content/shared/<module>/<lesson>.md` — modules available to all students
+- Each lesson is markdown with YAML frontmatter (`title`, `module`, `order`)
+- Slide breaks are `---` between sections
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+Built with Next.js 16 App Router, Tailwind v4, Plus Jakarta Sans + Instrument Serif.

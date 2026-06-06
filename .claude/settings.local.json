@@ -20,5 +20,9 @@
       "Bash(echo \"$f\")",
       "Bash(done)"
     ]
-  }
+  },
+  "disabledMcpjsonServers": [
+    "code-review-graph",
+    "autocad"
+  ]
 }
