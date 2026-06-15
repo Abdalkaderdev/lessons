@@ -42,7 +42,7 @@ export const students: Student[] = [
     icon: "users",
     tagline: "Friends Learning Together",
     description: "AI for everyday work — practical sessions taught together",
-    modules: ["choosing-the-right-ai-tool", "ai-for-writing-at-work", "ai-for-reading-research", "ai-for-planning-organizing", "ai-for-spreadsheets-data", "ai-for-presentations-visuals", "ai-for-meetings-communication", "ai-for-setup-automation"],
+    modules: ["choosing-the-right-ai-tool", "ai-for-writing-at-work", "ai-for-reading-research", "ai-for-planning-organizing", "ai-for-spreadsheets-data", "ai-for-presentations-visuals", "ai-for-meetings-communication", "ai-for-setup-automation", "ai-for-learning-and-growth", "ai-on-your-phone"],
   },
   {
     id: "fawzi",
