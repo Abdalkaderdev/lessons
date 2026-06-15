@@ -34,6 +34,17 @@ export const students: Student[] = [
     modules: ["ai-for-studying", "ai-for-fun", "ai-for-creativity", "ai-for-languages", "ai-for-health"],
   },
   {
+    id: "circle",
+    name: "The Circle",
+    gradient: "linear-gradient(135deg, #D9A23F, #A06A18)",
+    accentColor: "#B47B22",
+    bgTint: "rgba(180, 123, 34, 0.06)",
+    icon: "users",
+    tagline: "Friends Learning Together",
+    description: "AI for everyday work — practical sessions taught together",
+    modules: ["choosing-the-right-ai-tool", "ai-for-writing-at-work", "ai-for-reading-research", "ai-for-planning-organizing", "ai-for-spreadsheets-data", "ai-for-presentations-visuals", "ai-for-meetings-communication"],
+  },
+  {
     id: "fawzi",
     name: "Fawzi",
     gradient: "linear-gradient(135deg, #3DAA85, #1F7055)",
