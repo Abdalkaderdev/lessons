@@ -48,15 +48,15 @@ The "ask me 2 questions" line is important. It forces the AI to figure out what 
 
 ---
 
-## Step 2: Three flavors of the same move
+## Step 2: A worked example
 
-Same prompt, totally different decks:
+Here's the prompt above, filled in for a real talk:
 
-- **Teacher:** a 15-minute parent evening talk on "How we teach reading in Year 3." Goal: parents leave knowing how to support reading at home.
-- **NGO worker:** a 10-minute donor pitch for a new after-school program. Goal: a specific donor commits to funding one classroom.
-- **Business:** a 20-minute internal presentation proposing a switch to a new supplier. Goal: the leadership team approves a 3-month pilot.
+- A 15-minute talk for a specific audience (parents, donors, a leadership team — whoever you actually need to reach).
+- Goal: they leave knowing one specific thing or committing to one specific next step.
+- Opener: a short story, a number, or a question that matches what *that* audience responds to.
 
-For each, the opener, body, and close are completely different. The teacher opens with a story about one child. The NGO opens with a number ("47 kids on our waiting list"). The business opens with the cost problem. Don't let AI pick the opener — you pick it, based on what your audience actually responds to.
+The opener, body, and close depend on the room. A story about one person works for some audiences; a single number ("47 kids on our waiting list") works for others; a sharp cost problem works for others. Don't let AI pick the opener — you pick it, based on what your audience actually responds to.
 
 ---
 
@@ -115,7 +115,7 @@ Read the notes out loud. If a sentence feels weird in your mouth, change it. You
 
 - **It will pad your deck.** If you ask for 10 slides, it gives you 10 — even if your content only needs 6. Cut ruthlessly.
 - **The themes look similar.** Everyone using Gamma right now has decks that look vaguely the same. A bit of manual polish in Canva goes a long way.
-- **It can't read the room.** Donor pitches, classrooms, and boardrooms each have a different rhythm. You know that rhythm. The AI doesn't.
+- **It can't read the room.** Every audience has its own rhythm. You know that rhythm. The AI doesn't.
 - **Auto-generated charts are often wrong.** If there are real numbers, build the chart yourself.
 
 Rule of thumb: **AI builds the skeleton. You add the muscle.** The opener, the close, and the one slide you really care about — those should all be touched by your hand.

@@ -18,7 +18,7 @@ A clean spreadsheet is not the end. The point is to understand what it says. Thi
 - Excel with Copilot if you have it - built into newer Microsoft 365
 - [datawrapper.de](https://www.datawrapper.de) - free, makes honest-looking charts for reports
 
-If you are uploading sensitive data (donor records, student grades, customer lists), check the privacy settings of the AI tool first. Anonymise if in doubt.
+If you are uploading sensitive data, check the privacy settings of the AI tool first. Anonymise if in doubt.
 
 ---
 
@@ -44,43 +44,19 @@ This forces the AI (and you) to slow down. You will catch problems before they h
 
 Vague questions get vague answers. "Analyse my data" is a vague question.
 
-**Teacher version**:
+A better shape:
 
 ```
-This is a gradebook. Columns: student name, class, term, subject, score (0-100).
+This is a [describe the dataset in one line].
+Columns: [list each column and what it contains].
 Questions:
-1. Which class has the lowest average score in maths this term?
-2. Are there students whose scores dropped by more than 20 points
-   compared to last term?
-3. Is there a subject where the spread of scores is unusually wide?
+1. [a specific comparison - top 5, lowest average, biggest drop]
+2. [a specific trend - growth quarter on quarter, change over time]
+3. [a specific anomaly check - unusual spread, gaps, outliers]
 Use the data, do not guess. Show the numbers behind each answer.
 ```
 
-**NGO version**:
-
-```
-This is a donor database. Columns: donor name, first gift date,
-last gift date, total given, currency, campaign.
-Questions:
-1. How many donors gave once and never again?
-2. What is the median gift size by campaign?
-3. Which month of the year do most first-time gifts come in?
-Show the numbers, not just the conclusions.
-```
-
-**Business version**:
-
-```
-This is a sales export. Columns: order date, product, quantity,
-unit price, region, sales rep.
-Questions:
-1. Top 5 products by revenue this quarter.
-2. Which region grew fastest compared to last quarter?
-3. Are there days of the week with unusually low sales?
-Show the calculations.
-```
-
-Notice "show the numbers behind each answer". This is the single most important sentence.
+Notice "show the numbers behind each answer". This is the single most important sentence. Good questions are specific: a comparison, a trend, an anomaly. "Top 5 products by revenue this quarter" beats "tell me about sales".
 
 ---
 

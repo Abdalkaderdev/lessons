@@ -36,35 +36,17 @@ A good prompt has three parts:
 
 ## Example 1: VLOOKUP across two sheets
 
-You have two sheets. One has names, one has extra info. You want to pull the info next to the names.
-
-**Teacher version** - looking up parent phone numbers next to student names:
+You have two sheets. One has IDs or names, one has extra info. You want to pull the info next to each row.
 
 ```
 I have a Google Sheet with two tabs.
-Tab "Students" has column A = student name, column B = class.
-Tab "Contacts" has column A = student name, column C = parent phone.
-In tab "Students" column D, I want the parent phone for each student.
+Tab "Main" has column A = record ID, column B = name.
+Tab "Details" has column A = record ID, column C = extra info I need.
+In tab "Main" column C, I want the extra info for each record.
 Give me the formula and explain what each part does.
 ```
 
-**NGO version** - looking up village names next to beneficiary IDs:
-
-```
-Tab "Beneficiaries" has column A = beneficiary ID, column B = name.
-Tab "Locations" has column A = beneficiary ID, column D = village name.
-In "Beneficiaries" column C, I want the village for each ID.
-```
-
-**Business version** - looking up product prices next to order rows:
-
-```
-Sheet "Orders" has column A = order ID, column B = product code.
-Sheet "Pricing" has column A = product code, column B = unit price.
-In "Orders" column C, I want the unit price for each order.
-```
-
-Notice the pattern. Same shape, different content. The AI gives you VLOOKUP, INDEX/MATCH, or XLOOKUP depending on what you said.
+Same shape works for any pairing: students and parent phones, orders and unit prices, IDs and locations. The AI gives you VLOOKUP, INDEX/MATCH, or XLOOKUP depending on what you said.
 
 ---
 
@@ -84,9 +66,7 @@ Below 50, return "Fail".
 Give me the formula and tell me what to watch out for.
 ```
 
-- Teacher: this is literally grade banding.
-- NGO: same shape for "donation tier" - Gold, Silver, Bronze, none.
-- Business: same shape for "discount band" - high-volume, medium, none.
+The same shape covers any banding problem: grade bands, donation tiers, discount levels, risk categories.
 
 Ask the AI to use IFS or SWITCH instead of nested IFs if the tool supports it. It is cleaner.
 

@@ -45,11 +45,7 @@ Rules:
 
 That last block — the rules — is what separates a useful extraction from a mess.
 
-**Three examples — same idea, different work:**
-
-- **Teacher:** drawer of 30 receipts from a class trip. Columns: `date, vendor, item, amount, paid_by`. You need this for reimbursement.
-- **NGO assistant:** 25 paper application forms from a workshop. Columns: `name, age, village, phone, role_at_event`. You need this for the donor report.
-- **Business:** 40 supplier invoices from last quarter. Columns: `invoice_number, supplier, date, amount_net, vat, total`. You need this for accounting.
+For example, a stack of 40 supplier invoices becomes a clean table with columns `invoice_number, supplier, date, amount_net, vat, total`. Or a pile of paper application forms becomes rows of `name, age, location, phone, role`. The pattern is the same: decide the columns, write the rules, upload, get a table.
 
 ---
 
@@ -83,11 +79,7 @@ Look at the table you just produced. Now clean it:
 Show me the cleaned table and a short list of things I should review manually.
 ```
 
-The "flag suspicious values" step is gold. It's the AI doing the quality-check pass you wouldn't have the patience to do yourself.
-
-- **Teacher:** catches the "120 EUR" receipt that should have been "12.00 EUR" — a misread decimal point.
-- **NGO:** catches the participant entered twice under slightly different name spellings.
-- **Business:** catches the invoice where the VAT and the total got swapped.
+The "flag suspicious values" step is gold. It's the AI doing the quality-check pass you wouldn't have the patience to do yourself. It's the step that catches the "120 EUR" receipt that should have been "12.00 EUR" (misread decimal), the same person entered twice under slightly different spellings, or the invoice where the VAT and the total got swapped.
 
 ---
 

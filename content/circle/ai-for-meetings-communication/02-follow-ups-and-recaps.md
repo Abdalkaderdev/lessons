@@ -49,34 +49,19 @@ The "do not include" line matters. AI will pad an email with empty politeness by
 
 ---
 
-## Three flavors
+## A worked example
 
-Teacher — follow-up to a parent after the conference:
-
-```
-Draft a follow-up to a parent after a parent-teacher meeting about 
-their daughter's reading progress. Warm but direct. Mention: the 
-weekly reading log we agreed on, the book I will send home Friday, 
-and ask them to sign the log each week. Under 120 words.
-```
-
-NGO assistant — follow-up to a team after a planning meeting:
+Here is a version with the variables filled in, so you can see the shape:
 
 ```
-Draft a team email recapping yesterday's planning meeting for the 
-winter aid distribution. List who is doing what with deadlines. 
-Flag the two open questions waiting on the director. Friendly, 
-direct, under 200 words.
+Draft a follow-up email recapping yesterday's planning meeting. 
+List who is doing what with deadlines. Confirm the next steps 
+I promised, and ask the other side for the one thing I am 
+waiting on, with a date. Flag any open questions still waiting 
+on someone not in the room. Friendly, direct, under 200 words.
 ```
 
-Business — follow-up to a prospect after a sales call:
-
-```
-Draft a follow-up to a prospect after a discovery call. Confirm 
-their three stated pain points, the demo I will send by Thursday, 
-and ask for a 30-minute follow-up next week. Professional, no 
-buzzwords, under 150 words.
-```
+The structure stays the same whether you are writing to a parent, a teammate, or a client. What changes is the level of formality, the specific items you confirm, and the deadline you ask for. Adjust the tone line and the content; keep the spine.
 
 ---
 
@@ -91,7 +76,7 @@ They do not need: blow-by-blow detail.
 Format: 3 short paragraphs, plain language, no jargon.
 ```
 
-For the teacher, this is the email to the principal after a difficult parent meeting. For the NGO assistant, it is the message to the field officer who is on the road. For the business owner, it is the update to your partner who skipped the call.
+This is the message to the manager who could not attend, the colleague on the road, or the partner who skipped the call. Same structure each time.
 
 ---
 
@@ -124,11 +109,7 @@ blocker. Under 80 words.
 
 A good check-in says: "I am following up on X. Is there anything I can do to help unblock you?" Not: "You said you would do X and you have not done it."
 
-- Teacher: the parent who said they would sign the homework folder and has not.
-- NGO assistant: the volunteer who said they would send the photos and has not.
-- Business: the client who said they would send the signed contract and has not.
-
-Same structure, different stakes.
+The structure is the same whether the missing thing is a signed form, some photos, or a contract. Same prompt, different stakes.
 
 ---
 
@@ -154,7 +135,7 @@ You write the first one yourself. AI handles the next fifty.
 - AI loves the word "moreover." Strike it.
 - AI defaults to "I hope this email finds you well." Strike that too.
 - AI will invent details if your notes are thin. Read every draft before sending. If it says you promised a 3pm delivery and you did not, that is on you, not the model.
-- Never send an AI draft to someone in distress — a grieving parent, a beneficiary in crisis — without rewriting it in your own voice. People can feel the difference.
+- Never send an AI draft to someone in distress — anyone grieving, frightened, or in a crisis — without rewriting it in your own voice. People can feel the difference.
 
 ---
 

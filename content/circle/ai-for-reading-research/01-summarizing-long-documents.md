@@ -48,11 +48,7 @@ Then give me a one-page executive summary with:
 Use bullet points. Do not pad.
 ```
 
-**Three examples — same prompt, different documents:**
-
-- **Teacher:** uploading the new national curriculum framework PDF for your subject. You want to know what actually changed from last year.
-- **NGO assistant:** uploading a 30-page donor report draft your manager wrote. You want to know if the financial section matches the narrative.
-- **Business:** uploading a supplier contract before signing. You want to know what you're agreeing to in plain language.
+Use this when you've been handed any long document you need to act on — a report, a contract, a policy update, a draft someone wrote — and you need the gist plus the things you can't afford to miss.
 
 ---
 
@@ -75,9 +71,7 @@ For each answer, tell me which page or section you got it from.
 
 The "tell me which page" line is critical. It forces the AI to point at evidence instead of inventing.
 
-- **Teacher:** *"What are the assessment requirements for grade 6? When is the first observation deadline? Are there changes to homework policy?"*
-- **NGO:** *"How much was spent on staff salaries? What's the timeline for the next funding cycle? Is there a clause about data sharing?"*
-- **Business:** *"What's the payment term? Is there an auto-renewal clause? What's the penalty for late delivery?"*
+Good questions are concrete and answerable from the text. Examples: *"What's the payment term? Is there an auto-renewal clause? What's the penalty for late delivery?"* — or for a report — *"How much was spent on staff salaries? What's the timeline for the next cycle? Is there a clause about data sharing?"* Ask about deadlines, numbers, names, clauses, and policies — the things you'd otherwise have to hunt for page by page.
 
 ---
 

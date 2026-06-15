@@ -44,15 +44,19 @@ That last line — "No text in the image" — saves you from the worst AI behavi
 
 ---
 
-## Step 2: Three flavors, one prompt template
+## Step 2: A worked example
 
-Same structure, three completely different images you might actually need:
+Here's the template above, filled in:
 
-- **Teacher:** *"A child reading a book at a small wooden desk in a sunny classroom. Style: warm flat illustration. Composition: medium shot from the side. Mood: calm and focused. No text in the image."*
-- **NGO worker:** *"A group of three women filling water containers at a community well in a rural village. Style: documentary photograph. Composition: wide shot, natural framing. Mood: golden hour, hopeful but real. No text in the image."*
-- **Business:** *"A clean isometric illustration of a small warehouse with shelves and a forklift. Style: flat vector, two-color palette of navy blue and orange. Composition: 3D isometric angle. Mood: clean and professional. No text in the image."*
+*"A child reading a book at a small wooden desk in a sunny room. Style: warm flat illustration. Composition: medium shot from the side. Mood: calm and focused. No text in the image."*
 
-The teacher's image goes on a worksheet. The NGO's image goes in a donor email. The business image goes on the cover of a process document. Each needs a different style — pick yours on purpose, not by default.
+Change one slot at a time and the whole image changes:
+
+- Swap **style** from "warm flat illustration" to "documentary photograph" and the same scene becomes a real-feeling photo.
+- Swap **composition** from "medium shot" to "wide shot, natural framing" and you get context instead of intimacy.
+- Swap **mood** from "calm and focused" to "golden hour, hopeful but real" and the lighting tells a different story.
+
+Pick each slot on purpose, not by default. The slot you skip is the slot the AI fills with cliché.
 
 ---
 
@@ -101,7 +105,7 @@ Free stock photo sites worth knowing:
 - [https://www.pexels.com](https://www.pexels.com)
 - [https://pixabay.com](https://pixabay.com)
 
-For NGO work especially, [https://nappy.co](https://nappy.co) and [https://www.disabilityin.org/disability-images](https://www.disabilityin.org/disability-images) have stock images that aren't all corporate white guys in suits.
+If you need more diverse, less corporate images, [https://nappy.co](https://nappy.co) and [https://www.disabilityin.org/disability-images](https://www.disabilityin.org/disability-images) are worth bookmarking.
 
 ---
 
@@ -113,7 +117,7 @@ Be honest about this with yourself and your audience.
 - **Text.** Already covered, but worth repeating. Fake words everywhere.
 - **Faces of real people.** Don't try to generate "a photo of my colleague Sara." It won't be Sara.
 - **Brand logos and uniforms.** If a school uniform or a company logo appears, it will be wrong. Either crop it out or photograph the real thing.
-- **Cultural specifics.** "A village in Lebanon" might look like a generic Mediterranean stock cliché. Be specific or use a real photo.
+- **Cultural specifics.** "A village in Lebanon" can come out as a generic Mediterranean stock cliché. Be specific or use a real photo.
 - **Group photos.** The more people in the image, the more weird limbs and faces you get.
 
 Rule of thumb: **AI is great for illustrations, decent for backgrounds, risky for photos of people.** When in doubt, lean illustration or use stock.

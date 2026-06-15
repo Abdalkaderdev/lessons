@@ -41,11 +41,7 @@ You are my editor. Fix grammar, punctuation, and clear spelling mistakes only. D
 [paste your text]
 ```
 
-**Three examples:**
-
-- **Teacher:** end-of-term reports. You write 28 of them; you need them grammatically clean but still sounding like *you* wrote each one personally.
-- **NGO:** field report from a colleague whose English is a second language. Fix the grammar, don't fix the voice — the voice is part of the report.
-- **Business:** a contract clause you drafted at midnight. Catch the comma errors before legal does.
+Use this when you need clean grammar but the voice has to stay intact — a batch of reports you don't want sounding identical, a draft from a colleague whose English is a second language (fix the grammar, don't fix the voice — the voice is part of the document), or a clause you wrote at midnight that needs its commas checked before someone else reads it.
 
 ---
 
@@ -73,11 +69,11 @@ Translate this from [language] to [language]. Match the tone of the original: [f
 [paste text]
 ```
 
-**Examples:**
+A few rules that apply to almost any translation job:
 
-- **Teacher:** translating a parent newsletter into the home languages of the families. The chatbot version handles tone; DeepL handles accuracy. Use both — translate with DeepL, then ask Claude *"does this read naturally to a native speaker, or is it textbook-stiff?"*
-- **NGO:** translating a beneficiary's testimony for an English-language donor report. Be careful — over-polishing can erase the speaker's voice. Ask for *literal first, then polished,* and choose between them.
-- **Business:** translating a contract or an email to a client in another country. Always have a human native speaker check anything legally binding. AI translation is good, not perfect.
+- **Use both tools.** Translate with DeepL for accuracy, then paste the result into Claude and ask *"does this read naturally to a native speaker, or is it textbook-stiff?"*
+- **When the original voice matters — a quote, a testimony, anything personal — ask for *literal first, then polished,* and choose between them.** Over-polishing erases the speaker.
+- **For anything legally binding, a human native speaker still has to check it.** AI translation is good, not perfect.
 
 ---
 

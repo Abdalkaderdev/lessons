@@ -59,55 +59,33 @@ Honest take: if you write in Notion every day, Notion AI is worth it. If you don
 
 ---
 
-## Three Real Examples — Picking the Right Specialized Tool
+## Picking the Right Specialized Tool — A Worked Example
 
-**For the teacher** — "I recorded today's class because three students were absent. I want a written summary I can email them, with key questions students asked."
+You have a recorded conversation (a meeting, an interview, a class) and you want a clean written summary. This is the perfect example of why a single chatbot is the wrong starting point.
 
-Wrong: Open ChatGPT and try to upload the audio file (free version may refuse or do it poorly).
-Right: Use Otter.ai or Whisper to get the transcript, then paste the transcript into Claude with this prompt:
+Wrong: Upload the audio to ChatGPT. Free tiers may refuse or transcribe poorly with no speaker labels.
+
+Right: Transcribe first with Otter.ai or Whisper, then paste the transcript into Claude or ChatGPT:
 
 ```
-Below is a transcript of today's Year 9 history lesson. Write a 250-word summary for students who missed class. Include:
-- The main topic covered
-- Three key points the students should know
-- Any questions other students asked during the lesson
-- One reflection question for the absent students to think about
+Below is a transcript of a meeting. Write a 250-word summary for someone who wasn't there. Include:
+- The main topic discussed
+- Three key points or decisions
+- Any open questions still on the table
+- One clear next action
 
-Keep the tone friendly, not lecturing.
+Keep the tone neutral and direct, not over-formal.
 
 Transcript:
 [paste here]
 ```
 
----
+The same two-step pattern applies elsewhere:
 
-**For the NGO worker** — "I'm writing a grant proposal and I need to cite three recent studies on the impact of clean cooking stoves on women's health in sub-Saharan Africa."
+- **Need to cite real sources?** Use Perplexity, then click each link before quoting it. A general chatbot may invent citations.
+- **Need to clean up a photo you already have?** Upload it to Nano Banana (in Gemini) or ChatGPT's image edit and ask for one specific change (e.g. "replace the background with a light grey studio backdrop, keep everything else identical"). Check the result — AI editors sometimes drift shapes or blur labels.
 
-Wrong: Ask ChatGPT free and hope the citations are real (they often aren't).
-Right: Use Perplexity.
-
-```
-Find three peer-reviewed studies published in the last 5 years on the health impacts of clean cooking stoves for women in sub-Saharan Africa. For each, provide:
-- Title and authors
-- Year and journal
-- One sentence on the main finding
-- A direct link to the paper or its abstract
-
-Only include studies you can verify with a working link.
-```
-Then click each link before pasting any of it into your grant.
-
----
-
-**For the business owner** — "I need a clean product photo for my online store, but the background of my own photo is messy."
-
-Wrong: Try to describe the photo to a chatbot and have it generate a brand-new one — it won't look like your actual product.
-Right: Use Nano Banana inside Gemini, or use ChatGPT's image edit. Upload your photo and ask:
-
-```
-Here is a photo of my product. Replace the background with a clean, light grey studio backdrop. Keep the product itself, the lighting on it, and the colors exactly as they are. Output a high-resolution image suitable for an e-commerce listing.
-```
-Verify the product still looks like your actual product. AI editing tools sometimes change the product unintentionally — labels go fuzzy, shapes drift.
+The pattern: match the input (audio, photo, citation-grounded research) to the tool built for it, then bring the output back to a general assistant for the writing step.
 
 ---
 

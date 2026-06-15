@@ -51,15 +51,17 @@ Read the result out loud before you put it into Canva. If a section sounds like 
 
 ---
 
-## Step 2: Three flavors of a one-pager
+## Step 2: Let the use case drive the layout
 
-The same structure works for very different things:
+The same one-page structure — headline, short intro, 3–5 sections, clear next step — works for very different documents: a worksheet someone writes on, a flyer read from across a room, a one-pager emailed as a PDF.
 
-- **Teacher — worksheet:** A reading comprehension worksheet for Year 4. Headline, a short paragraph to read, 4 questions, a space for the student's name. Black and white, will be photocopied.
-- **NGO worker — event flyer:** A flyer for a community vaccination day. Headline, date and location in big text, 3 short bullets of what to bring, a phone number to call. Color, printed on A5.
-- **Business — one-page tearsheet:** A product one-pager for a sales meeting. Headline, one-sentence pitch, 3 benefits, one chart or stat, and contact details at the bottom. Brand colors, printed and PDF.
+But the *use* changes the layout:
 
-Notice the differences: the worksheet has to leave room for handwriting, the flyer has to read from 2 meters away, the tearsheet has to survive being emailed as a PDF. The content drives the layout — not the other way around.
+- If people will write on it, leave generous blank space and use plain black-and-white.
+- If people will read it from 2 meters away, the headline and key details need to be big — date, location, phone number.
+- If it will live as a PDF on a screen, you can use color freely but make sure it still prints clean.
+
+The content drives the layout — not the other way around. Decide how it will be used before you pick a template.
 
 ---
 
@@ -117,7 +119,7 @@ For documents people will *only* see on a phone (a WhatsApp flyer, an Instagram 
 ## What AI gets wrong with handouts
 
 - **It doesn't know paper sizes.** It will happily suggest a layout that won't fit on an A4 page.
-- **It over-designs.** AI templates love gradients, shapes, and decorative elements. For a serious tearsheet or worksheet, plainer is better.
+- **It over-designs.** AI templates love gradients, shapes, and decorative elements. For a serious document, plainer is better.
 - **Text in generated images is still broken.** If a poster has your organization's name as part of the image, generate the background separately and put the text on top in Canva.
 - **It will not catch a typo in your phone number.** Triple-check anything someone will use to contact you.
 - **Brand consistency is your job.** AI does not know your colors or your fonts unless you tell it, and even then it forgets across sessions.

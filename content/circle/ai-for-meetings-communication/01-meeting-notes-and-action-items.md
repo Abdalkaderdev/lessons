@@ -32,9 +32,7 @@ Before you press record, you ask. Out loud. Every time.
 
 If one person says no, you do not record. You take notes the old way. That rule is not negotiable.
 
-- Teacher: parent-teacher meetings. Some parents will be uncomfortable with a recording of their child being discussed. Default to no recording unless they ask for one.
-- NGO assistant: team check-ins are usually fine to record. Conversations with beneficiaries — refugees, vulnerable people, anyone sharing a story — usually are not.
-- Business: sales calls are commonly recorded, but in many places the law requires you to tell the other person. Say it in the first 30 seconds.
+Some context matters more than others. Routine internal team check-ins are usually fine to record. Anything involving children, patients, vulnerable people, or anyone sharing a personal story — default to no recording unless they specifically ask for one. In many countries, the law requires you to tell the other person you are recording, especially on phone or video calls. Say it in the first 30 seconds.
 
 ---
 
@@ -73,32 +71,19 @@ Transcript:
 
 ---
 
-## Three real examples
+## A sharper example
 
-Teacher — parent-teacher conference about a struggling student:
-
-```
-Summarize this parent-teacher meeting. Focus on: agreed-upon support 
-plan for the student, what the parent will do at home, what I will 
-do in class, and the date of our next check-in. Flag anything 
-sensitive I should be careful about in the written summary.
-```
-
-NGO assistant — weekly team meeting about a field project:
+The generic prompt above is a starting point. The more you tell the model about what you actually care about, the more useful the summary becomes. Here is a tailored version you can adapt to any meeting:
 
 ```
-Summarize our team meeting. Pull out: tasks assigned to each person 
-with deadlines, budget decisions, anything that needs the director's 
-approval, and risks that were raised but not resolved.
+Summarize this meeting. Pull out: tasks assigned to each person 
+with deadlines, decisions made, anything that needs approval from 
+someone not in the room, open questions that were not resolved, 
+and risks that were raised. Flag anything sensitive I should be 
+careful about repeating in writing.
 ```
 
-Business — sales discovery call with a potential client:
-
-```
-Summarize this sales call. Extract: the client's stated pain points, 
-their budget if mentioned, decision-makers named, objections raised, 
-next steps I promised, and a follow-up email draft I can send today.
-```
+Notice the pattern: name the categories you want, ask for owners and deadlines, ask the model to flag sensitive content. Swap in the specifics for your meeting — budget decisions, support plans, client pain points, whatever matters in your context.
 
 ---
 

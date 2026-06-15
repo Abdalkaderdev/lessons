@@ -65,48 +65,22 @@ That last line matters. Without it, AI will just guess and produce a confident-s
 
 ---
 
-## Three flavors of the same prompt
+## A worked example
 
-### Teacher — a lesson plan for a new unit
+Here is what a filled-in version of the prompt looks like in practice.
 
 ```
-I want to plan a 4-week unit on environmental science for 9th graders.
-The deadline is the start of next term (3 weeks from now).
-The people involved are me and one co-teacher.
-My constraints are: 2 hours of prep per week, no field trip budget, mixed-ability class of 28.
+I want to plan a 4-week workshop series for 30 participants in our community.
+The deadline is the start of next month (3 weeks from now).
+The people involved are me and two co-organizers.
+My constraints are: about 5 hours of prep per week, small materials budget,
+venue is only available evenings, mixed-experience group.
 
 Please break this into phases, list tasks, flag risks,
 and tell me what to decide before I start.
 ```
 
-### NGO assistant — a community project
-
-```
-I want to plan a literacy workshop series for 30 mothers in our district.
-The deadline is end of October (4 months away).
-The people involved are me, the program director, and 2 volunteer facilitators.
-My constraints are: $800 budget, venue is donated but only available evenings,
-most participants have young children.
-
-Please break this into phases, list tasks, flag risks,
-and tell me what to decide before I start.
-```
-
-### Business — a small launch
-
-```
-I want to plan the launch of a new service offering (1-on-1 consulting packages)
-for my existing clients.
-The deadline is end of next quarter.
-The people involved are me and a part-time assistant.
-My constraints are: I can spend 5 hours a week on this, no paid ads budget,
-my list has 400 past clients.
-
-Please break this into phases, list tasks, flag risks,
-and tell me what to decide before I start.
-```
-
-Run yours now. Read the result out loud to the group.
+Fill in your own version with your real goal and constraints. Run it now. Read the result out loud to the group.
 
 ---
 
@@ -138,7 +112,7 @@ For each one, give me an early warning sign I can watch for,
 and one thing I can do now to reduce the risk.
 ```
 
-Teacher example — "Students may not have internet at home" is a risk. Early warning sign — first homework completion rate. Action now — survey families before assigning the first online task.
+Example — "Participants may not show up consistently" is a risk. Early warning sign — attendance drops between session one and session two. Action now — confirm attendance by message the day before each session.
 
 ---
 

@@ -53,13 +53,11 @@ Rough note:
 [your note here]
 ```
 
-**Three examples — same prompt, different work:**
+**Example rough note:**
 
-- **Teacher:** *"Tell Layla's mum that Layla has been distracted in class for two weeks, I'd like to meet, propose Thursday after school."*
-- **NGO assistant:** *"Reply to the donor — thank her for the 500 EUR, mention it covers school supplies for 8 kids, send a photo update next month."*
-- **Business:** *"Follow up with the supplier — third time asking about the March delivery date, polite but firm, I need an answer by Friday."*
+*"Follow up with the supplier — third time asking about the March delivery date, polite but firm, I need an answer by Friday."*
 
-Each of these takes 10 seconds to type and produces a usable draft in another 10 seconds.
+That takes 10 seconds to type and produces a usable draft in another 10 seconds. The same move works for any short email you've been putting off — a reply to a parent, a thank-you to a donor, a chase to a client who's gone quiet.
 
 ---
 
@@ -73,9 +71,7 @@ Write a short, warm refusal. Do not over-apologise. Do not offer alternatives un
 Situation: [describe what you're declining and why]
 ```
 
-- **Teacher:** declining to write a recommendation letter for a student you barely taught.
-- **NGO:** declining a partnership request from an organisation whose values don't align.
-- **Business:** declining a "quick coffee" with a vendor who's been pestering you.
+Use this for the kinds of refusals everyone puts off: declining a request you don't have time for, turning down a partnership that doesn't fit, saying no to a "quick coffee" with someone who's been pestering you.
 
 ---
 

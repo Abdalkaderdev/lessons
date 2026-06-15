@@ -44,16 +44,16 @@ You don't need to know all of these today. You need to know they exist so when s
 
 ## Three Quick Examples — Same Question, Different Tool
 
-**For the teacher:** "I need a transcript of yesterday's parent meeting so I can write minutes."
+**"I need a transcript of yesterday's meeting so I can write up notes."**
 Wrong tool: Claude or ChatGPT — they can't listen to audio recordings easily.
 Right tool: Otter.ai or Whisper. Upload the recording, get text in minutes.
 
-**For the NGO worker:** "I need to find recent academic studies on water access in rural areas, with sources I can cite in a grant application."
+**"I need to find recent studies on a topic, with sources I can actually cite."**
 Wrong tool: ChatGPT free version — older free models sometimes invent citations.
 Right tool: Perplexity. It searches the live web and shows you the actual source links.
 
-**For the business owner:** "I need a logo concept for a new product line."
-Wrong tool: A general chatbot — it will describe a logo, not draw one.
+**"I need a visual concept — a logo, a poster, a product mockup."**
+Wrong tool: A general chatbot — it will describe an image, not draw one.
 Right tool: Midjourney or DALL-E. Type the description, get visual options.
 
 The lesson here is not "memorize the tool list." It's "before you fight with a chatbot, ask yourself if the job belongs to a different tool entirely."

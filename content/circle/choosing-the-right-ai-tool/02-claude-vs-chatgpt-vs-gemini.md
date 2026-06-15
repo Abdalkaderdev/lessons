@@ -83,30 +83,9 @@ Pick one as your daily driver. Use a second one only when the first hits a wall.
 
 ---
 
-## Three Real Examples
+## A Real Example — Same Prompt, Three Models
 
-**For the teacher** — "Write me a parent newsletter explaining the new grading system, warm but professional, about 300 words."
-
-Try this prompt in all three:
-```
-You are helping me write a parent newsletter for my Year 8 class. The school is moving from letter grades to a 1-4 mastery scale. Write a 300-word message that is warm, professional, and reassures parents this is not "easier" grading. End with one sentence inviting questions.
-```
-In practice: Claude usually wins here — the tone is the most natural. ChatGPT is fine but reads more "corporate." Gemini tends to be shorter and flatter.
-
----
-
-**For the NGO worker** — "I need to draft a 2-page concept note for a donor about a youth literacy program. I have rough notes."
-
-```
-I am drafting a 2-page concept note for a private foundation. The program is a youth literacy initiative for ages 9-14 in a region with limited library access. Below are my rough notes — turn them into a structured concept note with sections: Problem, Approach, Expected Outcomes, Budget Range, Next Steps. Keep the language clear and avoid jargon.
-
-[paste rough notes here]
-```
-In practice: Claude is the strongest at long, structured documents. ChatGPT is a close second. Use Gemini if you also need it to pull in recent statistics from the web.
-
----
-
-**For the business owner** — "I have a customer complaint email. Write a reply that takes responsibility without admitting legal fault, and offers a 20% credit."
+Take a single careful-tone task and run it through all three. A good test case: a reply to a complaint email, where tone matters more than facts.
 
 ```
 A customer emailed complaining that their order arrived 5 days late and one item was damaged. Write a reply that:
@@ -119,7 +98,14 @@ A customer emailed complaining that their order arrived 5 days late and one item
 Customer email below:
 [paste email]
 ```
-In practice: Claude handles the "careful tone" instruction best. ChatGPT works but tends to slip into over-apologetic phrasing. Copilot is decent if you live in Outlook and want to reply in place.
+
+In practice:
+- **Claude** handles the "careful tone" instruction best — it actually keeps the apology human and avoids over-promising.
+- **ChatGPT** works but tends to slip into over-apologetic, slightly corporate phrasing.
+- **Gemini** is faster and shorter but often misses the nuance — it apologizes too much or too little.
+- **Copilot** is decent if you live in Outlook and want to reply in place without copy-pasting.
+
+The same pattern shows up across long-form writing tasks: structured documents, newsletters, summaries, donor briefs. Claude tends to lead on tone and structure; ChatGPT is the all-rounder; Gemini wins when you need to pull in recent web information.
 
 ---
 

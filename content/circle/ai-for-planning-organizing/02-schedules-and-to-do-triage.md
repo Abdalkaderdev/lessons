@@ -56,61 +56,27 @@ That last line changes the output a lot. Without it, AI plays it safe. With it, 
 
 ---
 
-## Three flavors
+## A worked example
 
-### Teacher — a Sunday evening pile
+Here is what a real pile might look like when you paste it in:
 
 ```
-Here is my list before the school week:
-- Grade 9th grade essays (28 of them)
-- Plan Monday lesson
-- Email parent about Mateo's behavior
-- Update gradebook
-- Prep materials for Friday lab
-- Order new whiteboard markers
-- Write recommendation letter for Sara
-- Reorganize classroom library (been on list 3 months)
-- Read that pedagogy book everyone's talking about
-- Find a substitute for Wednesday's dentist appointment
+Here is my list right now:
+- Finish report due Friday
+- Follow up with 3 people I owe replies to
+- Plan next week's main meeting
+- Submit receipts from last month
+- Order supplies for next event
+- Schedule a call with the accountant
+- Update the page on the website that's been wrong for weeks
+- Renew the insurance
+- Reorganize the shared drive (been on list 3 months)
+- Read the book everyone's talking about
 
 [use the prompt above]
 ```
 
-### NGO assistant — a Monday morning pile
-
-```
-Here is what's on my plate at the office:
-- Donor report due Friday
-- Follow up with 3 community partners
-- Volunteer schedule for next month
-- Submit receipts from last event
-- Translate parent newsletter into Arabic
-- Order supplies for workshop
-- Update the program logframe
-- Schedule one-on-ones with my 4 program staff
-- Respond to journalist asking about our impact numbers
-- Set up new printer
-
-[use the prompt above]
-```
-
-### Business — an end-of-quarter pile
-
-```
-Here is my work list:
-- Send invoices to 4 clients
-- Q3 financial review with accountant
-- Renew business insurance
-- Reply to RFP from new prospect (deadline Wednesday)
-- Update services page on website
-- Onboard the new contractor
-- Plan Q4 marketing
-- Fix broken Stripe webhook
-- LinkedIn post (haven't posted in 6 weeks)
-- Read competitor's new offer
-
-[use the prompt above]
-```
+Notice the mix — real deadlines, vague hopes, and one thing that's been hanging around for months. That's a normal list. Dump yours the same way.
 
 ---
 
@@ -161,7 +127,7 @@ When you ask AI for a schedule, default to the realistic version. Always. You ca
 
 ## A note on honesty
 
-If you give AI a sanitized list, you get a sanitized plan. If you tell it "honestly I've been avoiding the donor report because I'm worried the numbers look bad" — you'll get advice that addresses the real problem, not the surface problem.
+If you give AI a sanitized list, you get a sanitized plan. If you tell it "honestly I've been avoiding this report because I'm worried the numbers look bad" — you'll get advice that addresses the real problem, not the surface problem.
 
 The chat is private. Nobody else reads it. You can be honest.
 

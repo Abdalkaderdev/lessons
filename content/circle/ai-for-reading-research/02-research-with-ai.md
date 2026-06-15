@@ -6,7 +6,7 @@ order: 2
 
 # Researching a Topic from Zero
 
-Every week somebody in this room has to learn something new fast. A teacher gets assigned a topic she's never taught. The NGO suddenly needs to understand a new regulation. The business has to evaluate a market it's never sold into.
+Every week somebody has to learn something new fast — a regulation that just changed, a field you've never worked in, a market you're being asked to evaluate, a topic that landed on your desk this morning.
 
 The old way was three hours of Googling, ten open tabs, and a vague sense that you understand it. The new way is faster — but only if you don't fall for the AI's confident-sounding nonsense.
 
@@ -40,13 +40,7 @@ Use plain language. No jargon without a definition.
 
 Run this in Perplexity first so you get sources. Then re-run it in Claude to see if you get a different angle.
 
-**Three examples:**
-
-- **Teacher:** *"I know almost nothing about dyslexia screening in primary school."*
-- **NGO assistant:** *"I know almost nothing about EU funding rules for cross-border projects."*
-- **Business:** *"I know almost nothing about selling B2B SaaS to schools."*
-
-That single prompt replaces about an hour of unfocused reading.
+Drop in any topic where you're starting from zero — *"I know almost nothing about EU funding rules for cross-border projects,"* or *"I know almost nothing about lithium battery shipping regulations,"* or *"I know almost nothing about dyslexia screening."* That single prompt replaces about an hour of unfocused reading.
 
 ---
 
@@ -64,9 +58,7 @@ Help me understand [specific question]. Please:
 
 The "tell me what you are uncertain about" line is the most underused trick in AI research. It pulls confidence levels out of the model. Use it on every research question.
 
-- **Teacher:** *"What does the research actually say about phones in classrooms — is the evidence strong or weak?"*
-- **NGO:** *"What's the legal difference between a beneficiary and a participant in EU project paperwork?"*
-- **Business:** *"How long is the typical sales cycle for selling software to a public school district?"*
+The sharper the question, the better the answer. Compare *"tell me about contracts"* to *"What's the legal difference between a beneficiary and a participant in EU project paperwork?"* The second one forces a real answer; the first invites a Wikipedia paragraph.
 
 ---
 

@@ -42,16 +42,24 @@ The `[NEED INPUT]` instruction is the secret. Without it, AI will invent specifi
 
 ---
 
-## Three flavours of the same method
+## A worked example
 
-**Teacher — lesson plan / curriculum doc:**
-Bullets: learning objective, prior knowledge needed, 5-minute warmer, 20-minute main activity, 10-minute assessment, materials list, differentiation for slower learners. Feed those in. You get a usable plan in 90 seconds instead of 90 minutes.
+Say you're writing a proposal — to a client, a funder, a board, doesn't matter. Your bullet skeleton might look like this:
 
-**NGO — grant proposal:**
-Bullets per section the funder asks for: problem statement, target population, intervention model, expected outcomes, monitoring plan, budget narrative, organisational capacity. Critical: paste the funder's own guidelines into the prompt. Grant reviewers reject proposals that ignore the rubric — AI is great at hitting a rubric if you give it one.
+- The reader's stated problem
+- Your understanding of it (this matters more than the solution)
+- Proposed approach
+- Deliverables and scope
+- Timeline
+- Budget or pricing
+- Why you / your organisation
 
-**Business — client proposal:**
-Bullets: client's stated problem, your understanding of it (this matters more than the solution), proposed approach, deliverables, timeline, pricing, why us. Always write the "why us" section yourself. AI generic-pitches it.
+Feed those bullets in with 1–2 paragraphs of your real writing as the tone example, and you get a usable first draft in 90 seconds instead of half a day.
+
+Two rules:
+
+1. **If the reader gave you a rubric or guidelines, paste them in.** Funders, procurement teams, and committees reject proposals that ignore the rubric — AI is great at hitting a rubric if you give it one.
+2. **Always write the "why us" section yourself.** AI generic-pitches it. The reason someone should pick you over the next person is the one thing only you can say.
 
 ---
 
@@ -86,9 +94,9 @@ Here is a draft section. The information is right but the order is wrong — the
 
 ---
 
-## Grant proposals — the special case
+## Spotting generic AI writing
 
-Grant proposals deserve their own warning. Funders read hundreds. They spot AI writing instantly because it has a specific smell:
+Proposals and reports deserve their own warning. Anyone who reads a lot of them — funders, procurement teams, senior managers — spots AI writing instantly because it has a specific smell:
 
 - Tricolons everywhere ("through innovation, collaboration, and sustained impact")
 - "Robust," "comprehensive," "holistic," "leverage," "synergies"
@@ -96,15 +104,15 @@ Grant proposals deserve their own warning. Funders read hundreds. They spot AI w
 - Vague verbs: "engage," "empower," "transform," "drive"
 - The closing line: "Together, we can build a brighter future."
 
-After the AI drafts your proposal, run this:
+After the AI drafts your document, run this:
 
 ```
-Read this grant proposal section. Flag every sentence that sounds like generic NGO writing. Specifically look for: tricolons, the words robust/comprehensive/holistic/leverage/synergies/empower/transform, vague verbs without an object, and any sentence that could appear in any proposal from any organisation. List the problems. Do not rewrite.
+Read this section. Flag every sentence that sounds like generic AI-flavoured writing. Specifically look for: tricolons, the words robust/comprehensive/holistic/leverage/synergies/empower/transform, vague verbs without an object, and any sentence that could appear in any document from any organisation. List the problems. Do not rewrite.
 
 [paste section]
 ```
 
-Then fix those sentences by hand. This is the step that separates a funded proposal from a polite rejection.
+Then fix those sentences by hand. This is the step that separates a document that gets a yes from one that gets a polite no.
 
 ---
 
@@ -120,7 +128,7 @@ Then fix those sentences by hand. This is the step that separates a funded propo
 
 ## Homework
 
-1. Pick one long document you actually need to write this month — lesson plan, grant section, client proposal. Write the bullet skeleton yourself (this is 80% of the thinking). Then use the expansion prompt to draft it.
+1. Pick one long document you actually need to write this month. Write the bullet skeleton yourself (this is 80% of the thinking). Then use the expansion prompt to draft it.
 2. Take any long document you've already written. Run the "tighten" prompt on one paragraph. Compare. Decide if the cuts were good.
-3. NGO members specifically: run the "generic NGO writing" check on the last proposal you sent out. Note three phrases you'll never use again.
+3. Run the "generic AI writing" check on the last proposal or report you sent out. Note three phrases you'll never use again.
 4. Open a fresh doc in [docs.google.com](https://docs.google.com) and save your finished draft there. Long documents need a real editor, not a chat window.

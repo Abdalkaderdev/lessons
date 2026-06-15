@@ -52,37 +52,24 @@ The "register" line matters for Arabic specifically. Modern Standard Arabic (fus
 
 ---
 
-## Three flavors
-
-Teacher — translating a school notice for Arabic-speaking parents:
+## A worked example
 
 ```
-Translate this school notice from English to Arabic. Audience: 
-parents in our school community, most of whom speak Levantine 
-Arabic at home but read MSA. Use simple MSA, warm tone, avoid 
-complicated grammar. Keep it under the same length as the English.
+Translate this text from English to Arabic. 
+Audience: readers in the Levant who speak colloquial at home 
+but read Modern Standard Arabic. 
+Tone: warm and direct. Register: simple MSA. 
+Preserve the politeness level of the original — do not make it 
+more flowery or more clipped. Keep it close to the same length.
+
+Where a phrase has no clean equivalent, translate literally and 
+add a short bracketed note explaining the cultural meaning.
+
+Text:
+[paste text here]
 ```
 
-NGO assistant — translating a field interview from Arabic to English for a donor report:
-
-```
-Translate this interview transcript from Arabic to English. The 
-speaker is a Syrian mother describing her family's situation. 
-Preserve her voice — do not make her sound more eloquent or more 
-broken than she is. Where a phrase has no clean English equivalent, 
-translate literally and add a short bracketed note explaining the 
-cultural meaning.
-```
-
-Business — translating a sales email from English to Arabic for a Gulf client:
-
-```
-Translate this sales email from English to Arabic for a business 
-contact in the UAE. Use formal business Arabic. The original is 
-friendly-direct American style; make it polite-direct Gulf business 
-style. Open with appropriate greetings and close with appropriate 
-respect formulas.
-```
+Swap the audience and register lines for whatever you are writing — a Gulf business contact wants formal Arabic with proper greetings; an interview transcript needs you to preserve the speaker's voice. Same frame, different details.
 
 ---
 
@@ -93,7 +80,7 @@ You are in a meeting with someone who speaks a different language. Two options:
 - Google Translate app — has a live conversation mode. Tap the language, speak, the phone speaks back in the other language. Good enough for simple exchanges.
 - Otter (https://otter.ai) or Fireflies (https://fireflies.ai) — transcribe in one language, then run the transcript through Claude for translation afterward. Better for accuracy, worse for speed.
 
-Honest warning: live translation breaks down quickly when people get emotional, talk fast, or use slang. For serious conversations — a parent worried about their child, a beneficiary describing a hard situation, a client negotiating a contract — bring a human interpreter if you can. AI is a backup, not a replacement.
+Honest warning: live translation breaks down quickly when people get emotional, talk fast, or use slang. For serious conversations — anything emotional, anything where the stakes are high, anything being negotiated — bring a human interpreter if you can. AI is a backup, not a replacement.
 
 ---
 
@@ -101,11 +88,10 @@ Honest warning: live translation breaks down quickly when people get emotional, 
 
 Some patterns to know:
 
-- Arabic uses more honorifics and blessings than English. "Allah ybarek feek" is normal in a casual Arabic message. Translated literally as "God bless you" in an English business email, it sounds odd. Adapt, do not translate word-for-word.
-- English uses contractions ("don't," "can't"). Arabic does not work that way. Direct translations of contractions sometimes sound clipped or unfinished.
-- Arabic often puts the verb first. Machine translation occasionally produces awkward English word order when translating in that direction. Read the output aloud.
+- Arabic uses more honorifics and blessings than English. Adapt, do not translate word-for-word.
+- Arabic often puts the verb first. Machine translation sometimes produces awkward English word order. Read the output aloud.
 - Names of people and places get mangled. Always check names by hand.
-- Right-to-left rendering breaks formatting in some apps. If you paste Arabic into a document and the punctuation jumps to the wrong end of the sentence, that is the RTL bug, not the translation.
+- Right-to-left rendering breaks formatting in some apps. If punctuation jumps to the wrong end of the sentence, that is the RTL bug, not the translation.
 
 ---
 
@@ -113,9 +99,9 @@ Some patterns to know:
 
 A few examples we have hit in real life:
 
-- A condolence message translated literally from English into Arabic loses all the standard mourning phrases that an Arabic speaker expects. The message reads as cold even though the words are correct.
-- An Arabic business email opens with two paragraphs of warm greetings before the actual point. Translated word-for-word into English, that opening makes the writer sound long-winded. A Western reader expects the point in the first sentence.
-- Religious phrases — "inshallah," "alhamdulillah," "mashallah" — carry real meaning to the speaker. Translating them as "hopefully," "thanks," or "wow" strips that meaning. Sometimes you leave them in transliterated form and let the reader figure it out.
+- A condolence message translated literally from English into Arabic loses the standard mourning phrases an Arabic speaker expects. The words are correct; the message reads as cold.
+- An Arabic business email opens with paragraphs of warm greetings before the actual point. Translated word-for-word into English, the writer sounds long-winded. A Western reader expects the point in the first sentence.
+- Religious phrases — "inshallah," "alhamdulillah," "mashallah" — carry real meaning. Translating them as "hopefully," "thanks," or "wow" strips that meaning. Sometimes you leave them transliterated and let the reader figure it out.
 
 When in doubt, ask the AI to explain rather than translate:
 
@@ -147,4 +133,4 @@ For everything else, AI is fine — as long as you read the output before you se
 
 1. Take one message you actually need to send this week in a second language. Translate it two ways: once with Google Translate, once with Claude using the tone prompt above. Compare them. Note which you would actually send.
 2. Find a phrase in your second language that does not translate cleanly into English (or vice versa). Ask Claude to explain it using the "explain rather than translate" prompt.
-3. Pick one document at your work that contains sensitive information — student records, beneficiary stories, client contracts. Write a short rule for yourself about whether you will ever run it through an online translation tool.
+3. Pick one document at your work that contains sensitive information. Write a short rule for yourself about whether you will ever run it through an online translation tool.

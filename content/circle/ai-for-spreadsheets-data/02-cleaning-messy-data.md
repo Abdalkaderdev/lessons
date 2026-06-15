@@ -55,9 +55,7 @@ Give me a formula and explain it.
 
 You will get something using `PROPER`, `TRIM`, and possibly `SUBSTITUTE`.
 
-- **Teacher**: cleaning a class roster where parents wrote names differently on different forms.
-- **NGO**: cleaning a donor list merged from a website export and a paper sign-up sheet.
-- **Business**: cleaning a customer list pulled from two systems that never agreed.
+This is the same fix whether you are merging a roster, a contact export, or two customer lists that never agreed.
 
 Watch out: PROPER does not know that "McDonald" is not "Mcdonald". Spot check the result before deleting the original column.
 
@@ -94,9 +92,7 @@ I want column G to be the same number formatted as "+1 555 123 4567"
 if it has 10 or 11 digits, otherwise the word "CHECK".
 ```
 
-- Teacher: parent contact numbers from sign-up forms.
-- NGO: beneficiary numbers for an SMS campaign - the SMS service rejects badly formatted ones.
-- Business: customer phone numbers that need to match a CRM format.
+This matters any time another system - an SMS service, a CRM, an import tool - rejects badly formatted numbers.
 
 ---
 
@@ -128,7 +124,7 @@ Duplicates are rarely identical. "Maria Garcia" and "maria garcia " are duplicat
 Clean first, deduplicate second. Order matters.
 
 ```
-I have a sheet of [donors / students / customers].
+I have a sheet of people records.
 I have already standardised the name column to proper case and trimmed spaces.
 The email column is in column C.
 1. Find rows where the email is identical.

@@ -52,50 +52,23 @@ The "just one" instruction matters. Without it, AI will dump 8 questions at you 
 
 ---
 
-## Three flavors
+## A worked example
 
-### Teacher — a class management decision
-
-```
-I want to think out loud about a decision. Don't give me the answer.
-
-The decision is: whether to move Yousef out of my 4th period class.
-He's disruptive but I'm not sure if removing him is fair or if I'm just tired.
-What I'm leaning toward: keeping him, with a behavior contract.
-What's making me hesitate: the rest of the class is suffering and I'm
-exhausted by Friday.
-
-Ask me one question at a time.
-```
-
-### NGO assistant — a program decision
+Here is what a filled-in version looks like:
 
 ```
 I want to think out loud about a decision. Don't give me the answer.
 
-The decision is: whether to expand our literacy program to a second district
-next year, or deepen it in the current one.
-What I'm leaning toward: expanding, because the funder wants growth.
-What's making me hesitate: we don't have the staff, and outcomes in the
-current district are still mediocre.
+The decision is: whether to take on a bigger commitment next year that
+would expand what I do, or stay focused on doing the current thing better.
+What I'm leaning toward: expanding, because people keep asking me to.
+What's making me hesitate: I'm already stretched and the current work
+isn't as strong as I want it to be.
 
 Ask me one question at a time.
 ```
 
-### Business — a strategic decision
-
-```
-I want to think out loud about a decision. Don't give me the answer.
-
-The decision is: whether to drop my lowest-paying client tier and focus
-only on premium clients.
-What I'm leaning toward: dropping them.
-What's making me hesitate: it's 40% of my revenue and I'm scared of the gap.
-
-Ask me one question at a time.
-```
-
-Run yours. Go through at least 4 question-and-answer rounds before stopping.
+Fill in your own real decision. Run it. Go through at least 4 question-and-answer rounds before stopping.
 
 ---
 
